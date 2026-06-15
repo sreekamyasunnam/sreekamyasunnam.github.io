@@ -803,7 +803,7 @@ nav.scrolled {
   border-radius:16px;
   overflow:visible;
 }
-.exp-rotate-card .exp-card.flipped { transform:rotateY(180deg); }
+.exp-rotate-card .exp-card.flipped { transform:none; }
 .exp-fade-card .exp-card { transform-style:flat; }
 .exp-fade-card .exp-card-front { transition:opacity 0.55s ease; }
 .exp-fade-card .exp-card.flipped .exp-card-front { opacity:0; pointer-events:none; }
@@ -823,7 +823,7 @@ nav.scrolled {
   box-shadow:0 10px 35px rgba(0,0,0,0.1), 0 3px 10px rgba(0,0,0,0.06);
 }
 .exp-card-front { background:var(--cbf); }
-.exp-card-back { background:var(--cbb); transform:rotateY(180deg); }
+.exp-card-back { background:var(--cbb); transform:none; }
 .exp-fade-card .exp-card-back { transform:none; }
 
 /* Shimmer — front only */
@@ -1164,6 +1164,34 @@ nav.scrolled {
     line-height:1.85 !important;
     letter-spacing:0.015em !important;
   }
+}
+
+
+/* ── CLEAN FADE FLIP — no 3D, no mirror ── */
+.exp-card { transform-style:flat !important; transition:none !important; }
+.exp-card-front {
+  opacity:1 !important; filter:blur(0px) !important;
+  transition:opacity 0.55s ease, filter 0.55s ease !important;
+  pointer-events:auto !important;
+  backface-visibility:visible !important;
+  -webkit-backface-visibility:visible !important;
+  transform:none !important;
+}
+.exp-card.flipped .exp-card-front {
+  opacity:0 !important; filter:blur(3px) !important;
+  pointer-events:none !important;
+}
+.exp-card-back {
+  transform:none !important;
+  backface-visibility:visible !important;
+  -webkit-backface-visibility:visible !important;
+  opacity:0 !important; filter:blur(3px) !important;
+  transition:opacity 0.55s ease 0.1s, filter 0.55s ease 0.1s !important;
+  pointer-events:none !important;
+}
+.exp-card.flipped .exp-card-back {
+  opacity:1 !important; filter:blur(0px) !important;
+  pointer-events:auto !important;
 }
 
 </style>
