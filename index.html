@@ -664,7 +664,7 @@ nav.scrolled {
 /* ════════════════ EXPERIENCE v6 ════════════════ */
 .exp-section {
   position:relative;
-  background:linear-gradient(160deg,#F2EAD8 0%,#EAD9BB 50%,#E2CFA8 100%);
+  background:#F2EAD8;
   padding:5rem 5vw 8rem;
   overflow:hidden;
   min-height:100vh;
@@ -690,33 +690,28 @@ nav.scrolled {
 .exp-heading-wrap {
   position:relative; z-index:2;
   text-align:center; margin-bottom:1.5rem;
-  padding-left:30vw;
-  overflow:hidden;
+  padding-left:0;
+  overflow:visible;
 }
 
-/* Split heading — left and right halves */
+/* Clean heading — fade up like Projects & Publications */
 .exp-heading-word {
-  display:flex; justify-content:center; align-items:baseline;
   font-family:'Cormorant Garamond',serif;
-  font-weight:700; font-style:italic;
-  font-size:clamp(60px,7vw,96px);
-  text-transform:uppercase; letter-spacing:0.04em;
-  line-height:0.92; margin-bottom:14px;
-  color:#C9A227;
-  text-shadow:0 0 40px rgba(212,175,55,0.3), 0 2px 8px rgba(180,140,20,0.2);
+  font-weight:600; font-style:normal;
+  font-size:clamp(40px,5.5vw,72px);
+  text-transform:none; letter-spacing:0;
+  line-height:1.1; margin-bottom:14px;
+  color:#1E0E04;
+  text-shadow:none;
+  opacity:0; transform:translateY(28px);
+  transition:opacity 1s ease, transform 1s ease;
 }
-.exp-head-left {
-  opacity:0; transform:translateX(60px);
-  display:inline-block;
-  transition:opacity 0.8s ease, transform 0.8s cubic-bezier(0.34,1.1,0.64,1);
-}
-.exp-head-right {
-  opacity:0; transform:translateX(-60px);
-  display:inline-block;
-  transition:opacity 0.8s ease 0.05s, transform 0.8s cubic-bezier(0.34,1.1,0.64,1) 0.05s;
-}
-.exp-heading-wrap.vis .exp-head-left { opacity:1; transform:translateX(0); }
-.exp-heading-wrap.vis .exp-head-right { opacity:1; transform:translateX(0); }
+.exp-heading-wrap.vis .exp-heading-word { opacity:1; transform:translateY(0); }
+/* Keep these for backwards compatibility but nullify */
+.exp-head-left { opacity:1; transform:none; display:inline; transition:none; }
+.exp-head-right { opacity:1; transform:none; display:inline; transition:none; }
+.exp-heading-wrap.vis .exp-head-left { opacity:1; transform:none; }
+.exp-heading-wrap.vis .exp-head-right { opacity:1; transform:none; }
 
 /* Tagline */
 .exp-heading-sub {
@@ -773,7 +768,7 @@ nav.scrolled {
 }
 .exp-mini {
   position:absolute; width:28px; height:38px;
-  border-radius:4px; background:var(--mc,#F0E2C4);
+  border-radius:4px; background:var(--mc,#EDE8F5);
   border:1.5px solid rgba(212,175,55,0.6);
   box-shadow:0 4px 12px rgba(0,0,0,0.12);
   margin-left:-14px; margin-top:-19px;
@@ -1011,7 +1006,7 @@ nav.scrolled {
 /* ── MOBILE ─────────────────────────── */
 @media(max-width:900px) {
   .exp-grid { grid-template-columns:repeat(2,1fr); gap:1rem; }
-  .exp-heading-word { font-size:clamp(44px,12vw,64px); }
+  .exp-heading-word { font-size:clamp(28px,8vw,44px); text-align:center; }
   .exp-stage { min-height:380px; }
   .exp-suitcase svg { width:130px; }
 }
@@ -1064,7 +1059,7 @@ nav.scrolled {
 /* Mobile — hide photo on small screens */
 @media(max-width:768px) {
   .exp-photo-wrap { display:none; }
-  .exp-heading-wrap { padding-left:0; text-align:center; }
+  .exp-heading-wrap { padding-left:0; text-align:center; overflow:visible; }
   .exp-heading-sub { justify-content:center; }
 }
 
@@ -1450,11 +1445,19 @@ nav.scrolled {
   <!-- Ghost 03 — zooms out from centre -->
   <div class="exp-ghost" id="expGhost">03</div>
 
-  <!-- Heading — splits from centre -->
+  <!-- Section header — same style as Projects & Publications -->
   <div class="exp-heading-wrap" id="expHeadWrap">
-    <div class="exp-heading-word">
-      <span class="exp-head-left">EXPERI</span><span class="exp-head-right">ENCE</span>
+    <!-- Section label -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:1.1rem;opacity:0;transform:translateY(16px);transition:opacity 0.8s ease,transform 0.8s ease;" id="expLabel">
+      <div style="height:0.5px;width:32px;background:rgba(30,14,4,0.3);"></div>
+      <div style="width:5px;height:5px;border:0.5px solid rgba(30,14,4,0.4);transform:rotate(45deg);flex-shrink:0;"></div>
+      <span style="font-size:12px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(30,14,4,0.55);font-family:'DM Sans',sans-serif;font-weight:500;">03 · Experience</span>
+      <div style="width:5px;height:5px;border:0.5px solid rgba(30,14,4,0.4);transform:rotate(45deg);flex-shrink:0;"></div>
+      <div style="height:0.5px;width:32px;background:rgba(30,14,4,0.3);"></div>
     </div>
+    <!-- Big heading — clean fade up -->
+    <div class="exp-heading-word">The roles that shaped who I am.</div>
+    <!-- Tagline / instruction -->
     <div class="exp-heading-sub" id="expTagline">
       <div class="exp-ey-ln"></div><div class="exp-ey-dm"></div>
       <span class="exp-ey-txt">— flip the card. meet the work. —</span>
@@ -1473,7 +1476,7 @@ nav.scrolled {
     <div class="exp-grid" id="expGrid">
     <div class="exp-card-wrap exp-rotate-card"
          data-sx="-300" data-sy="-15" data-sr="-18"
-         style="--cbf:#F5ECD8;--cbb:#FAF6EE;">
+         style="--cbf:#EDE8F5;--cbb:#F5F2FB;">
       <div class="exp-card" id="card-srj">
         <div class="exp-card-front">
           <div class="exp-shimmer"></div>
@@ -1499,7 +1502,7 @@ nav.scrolled {
       <div class="exp-tip-star">✦</div>
     </div>    <div class="exp-card-wrap exp-fade-card"
          data-sx="300" data-sy="-15" data-sr="16"
-         style="--cbf:#F2E8D2;--cbb:#FAF4EA;">
+         style="--cbf:#E8F4EF;--cbb:#F2FAF6;">
       <div class="exp-card" id="card-knacktech">
         <div class="exp-card-front">
           <div class="exp-shimmer"></div>
@@ -1525,7 +1528,7 @@ nav.scrolled {
       <div class="exp-tip-star">✦</div>
     </div>    <div class="exp-card-wrap exp-rotate-card"
          data-sx="-300" data-sy="15" data-sr="-12"
-         style="--cbf:#EDE0C0;--cbb:#F8F2E0;">
+         style="--cbf:#FAE8E2;--cbb:#FDF2EF;">
       <div class="exp-card" id="card-csr">
         <div class="exp-card-front">
           <div class="exp-shimmer"></div>
@@ -1551,7 +1554,7 @@ nav.scrolled {
       <div class="exp-tip-star">✦</div>
     </div>    <div class="exp-card-wrap exp-fade-card"
          data-sx="300" data-sy="15" data-sr="20"
-         style="--cbf:#F0E2C4;--cbb:#FAF0D8;">
+         style="--cbf:#E4EEF8;--cbb:#EFF5FC;">
       <div class="exp-card" id="card-excelerate">
         <div class="exp-card-front">
           <div class="exp-shimmer"></div>
@@ -1584,15 +1587,15 @@ nav.scrolled {
 <!-- ████████████████ PROJECTS SECTION ████████████████ -->
 <section id="projects" style="background:#F2EAD8;padding:6rem 6vw 7rem;position:relative;overflow:hidden;">
 
-  <!-- Ghost 05 watermark — more visible with shimmer -->
-  <div class="proj-ghost-num">05</div>
+  <!-- Ghost 04 watermark — more visible with shimmer -->
+  <div class="proj-ghost-num">04</div>
 
   <!-- Section heading -->
   <div style="position:relative;z-index:1;margin-bottom:3rem;">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.1rem;">
       <div style="height:0.5px;width:32px;background:rgba(30,14,4,0.3);"></div>
       <div style="width:5px;height:5px;border:0.5px solid rgba(30,14,4,0.4);transform:rotate(45deg);flex-shrink:0;"></div>
-      <span style="font-size:12px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(30,14,4,0.55);font-family:'DM Sans',sans-serif;font-weight:500;">05 · Projects</span>
+      <span style="font-size:12px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(30,14,4,0.55);font-family:'DM Sans',sans-serif;font-weight:500;">04 · Projects</span>
     </div>
     <h2 id="proj-tagline" class="proj-animate-el" style="font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.5vw,72px);font-weight:600;color:#1E0E04;line-height:1.1;margin-bottom:0.8rem;">The work that made me.</h2>
     <p id="proj-intro" class="proj-animate-el" style="font-family:'DM Sans',sans-serif;font-size:clamp(13px,1.3vw,16px);color:#8C7A6B;font-style:italic;max-width:520px;transition-delay:0.2s;">Some people talk about what they can do. This is what I already did.</p>
@@ -1640,7 +1643,7 @@ nav.scrolled {
 </section>
 
 <style>
-/* Ghost 05 */
+/* Ghost 04 */
 .proj-ghost-num{
   position:absolute;top:-60px;left:-30px;
   font-family:'Playfair Display',serif;
@@ -2155,7 +2158,268 @@ const projObs=new IntersectionObserver((entries)=>{
 projObs.observe(projSection);
 </script>
 
-<div id="publications" class="ph-section section-fade" style="background:linear-gradient(135deg,#EDE3C8,#E5D8B8);"><p class="ph-txt">Publications &mdash; Sprint 5</p></div>
+<!-- ████████████████ PUBLICATIONS SECTION ████████████████ -->
+<section id="publications" style="background:#F2EAD8;padding:6rem 6vw 7rem;position:relative;overflow:hidden;">
+
+  <!-- Ghost 05 watermark -->
+  <div style="position:absolute;top:-60px;left:-30px;font-family:'Playfair Display',serif;font-size:clamp(220px,28vw,400px);font-weight:900;font-style:italic;color:rgba(212,175,55,0.1);pointer-events:none;user-select:none;line-height:1;z-index:0;-webkit-text-stroke:1px rgba(212,175,55,0.05);">05</div>
+
+  <!-- Section header -->
+  <div style="position:relative;z-index:1;margin-bottom:4rem;">
+    <div class="pub-animate" style="display:flex;align-items:center;gap:10px;margin-bottom:1.1rem;">
+      <div style="height:0.5px;width:32px;background:rgba(30,14,4,0.3);"></div>
+      <div style="width:5px;height:5px;border:0.5px solid rgba(30,14,4,0.4);transform:rotate(45deg);flex-shrink:0;"></div>
+      <span style="font-size:12px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(30,14,4,0.55);font-family:'DM Sans',sans-serif;font-weight:500;">05 · Publications</span>
+    </div>
+    <h2 class="pub-animate" style="font-family:'Cormorant Garamond',serif;font-size:clamp(44px,6vw,80px);font-weight:600;color:#1E0E04;line-height:1.05;margin-bottom:0.6rem;transition-delay:0.1s;">Publications</h2>
+    <p class="pub-animate" style="font-family:'DM Sans',sans-serif;font-size:clamp(13px,1.4vw,17px);color:#8C7A6B;font-style:italic;transition-delay:0.2s;">The work that got published.</p>
+  </div>
+
+  <!-- Timeline -->
+  <div id="pub-timeline" style="position:relative;z-index:1;padding-left:clamp(32px,5vw,56px);">
+
+    <!-- Publication 1 — Drug/ML -->
+    <div class="pub-item" data-index="0" style="position:relative;margin-bottom:0;">
+      <div class="pub-dot" style="position:absolute;left:clamp(-40px,-6.2vw,-34px);top:20px;width:14px;height:14px;border-radius:50%;background:#534AB7;border:3px solid #F2EAD8;box-shadow:0 0 0 2px #534AB7;opacity:0;transition:opacity 0.3s ease;z-index:5;"></div>
+      <div class="pub-line" style="position:absolute;left:clamp(-34px,-5.5vw,-28px);top:34px;width:2px;background:linear-gradient(to bottom,#534AB7,#D85A30);height:0;transition:height 0.6s ease;z-index:4;"></div>
+      <div class="pub-card" style="background:#FFFDF8;border:0.5px solid #D8CEBC;border-radius:2px;overflow:hidden;cursor:pointer;opacity:0;transform:translateX(40px);transition:opacity 0.5s ease,transform 0.5s cubic-bezier(.34,1.56,.64,1),box-shadow 0.3s ease;box-shadow:0 2px 12px rgba(30,14,4,0.06);">
+        <div class="pub-card-top" onclick="togglePub(0)" style="padding:20px 24px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
+          <div style="flex:1;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+              <span style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;">2022</span>
+              <span style="width:3px;height:3px;border-radius:50%;background:#8C7A6B;flex-shrink:0;"></span>
+              <span style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;">JuniKhyat · UGC Care Group I</span>
+            </div>
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2vw,22px);font-weight:600;color:#1E0E04;line-height:1.25;margin-bottom:10px;">Drug Advocacy System Based on Sentiment Analysis for Pharmaceutical Scrutiny Using Machine Learning Patterns</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#EEEDFE;color:#3C3489;font-family:'DM Sans',sans-serif;">NLP</span>
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#EEEDFE;color:#3C3489;font-family:'DM Sans',sans-serif;">ML</span>
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#EEEDFE;color:#3C3489;font-family:'DM Sans',sans-serif;">Sentiment analysis</span>
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#EEEDFE;color:#3C3489;font-family:'DM Sans',sans-serif;">TF-IDF</span>
+            </div>
+          </div>
+          <div style="text-align:right;flex-shrink:0;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:#534AB7;line-height:1;">93%</div>
+            <div style="font-size:9px;color:#8C7A6B;font-family:'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:0.1em;">accuracy</div>
+            <div class="pub-chevron" style="margin-top:12px;font-size:14px;color:#8C7A6B;transition:transform 0.3s ease;"><i class="ti ti-chevron-down" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="pub-expand" style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(.4,0,.2,1);">
+          <div style="padding:0 24px 24px;border-top:0.5px solid rgba(30,14,4,0.08);">
+            <div style="padding-top:18px;">
+              <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;margin-bottom:8px;">Abstract</div>
+              <p style="font-family:'Libre Baskerville',serif;font-size:12.5px;color:#4A3E3D;line-height:1.8;margin-bottom:16px;">A medication recommender system that predicts sentiment based on patient reviews using vectorization processes including Bow, TF-IDF, Word2Vec, and Manual Feature Analysis. Multiple classification algorithms were applied to recommend the best drug for a given disease. The Linear SVC classifier using TF-IDF vectorization achieved the highest accuracy of 93%, demonstrating the power of machine learning in pharmaceutical scrutiny.</p>
+              <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;margin-bottom:8px;">Key results</div>
+              <p style="font-family:'DM Sans',sans-serif;font-size:12px;color:#4A3E3D;line-height:1.7;margin-bottom:18px;">Linear SVC on TF-IDF → 93% accuracy · Perceptron on Bow → 91% · LGBM on Word2Vec → 91% · Random Forest on manual features → 88%</p>
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                <a href="/mnt/project/ML_paper.pdf" download style="display:inline-flex;align-items:center;gap:6px;font-family:'DM Sans',sans-serif;font-size:12px;padding:8px 18px;border-radius:2px;border:0.5px solid #534AB7;color:#534AB7;text-decoration:none;transition:all 0.2s ease;" onmouseover="this.style.background='#534AB7';this.style.color='#F2EAD8'" onmouseout="this.style.background='transparent';this.style.color='#534AB7'"><i class="ti ti-download" style="font-size:13px;" aria-hidden="true"></i> Download PDF</a>
+                <span style="font-size:11px;color:#8C7A6B;font-family:'DM Sans',sans-serif;font-style:italic;">Authors: Dr. M. Ajay Kumar · Sree Kamya · K. Kiranmai · K. Ujwala · J. Neeshitha</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Publication 2 — Brain Tumor -->
+    <div class="pub-item" data-index="1" style="position:relative;margin-bottom:0;margin-top:0;">
+      <div class="pub-dot" style="position:absolute;left:clamp(-40px,-6.2vw,-34px);top:20px;width:14px;height:14px;border-radius:50%;background:#1D9E75;border:3px solid #F2EAD8;box-shadow:0 0 0 2px #1D9E75;opacity:0;transition:opacity 0.3s ease;z-index:5;"></div>
+      <div class="pub-line" style="position:absolute;left:clamp(-34px,-5.5vw,-28px);top:34px;width:2px;background:linear-gradient(to bottom,#1D9E75,#D85A30);height:0;transition:height 0.6s ease;z-index:4;"></div>
+      <div class="pub-card" style="background:#FFFDF8;border:0.5px solid #D8CEBC;border-radius:2px;overflow:hidden;cursor:pointer;opacity:0;transform:translateX(40px);transition:opacity 0.5s ease,transform 0.5s cubic-bezier(.34,1.56,.64,1),box-shadow 0.3s ease;box-shadow:0 2px 12px rgba(30,14,4,0.06);">
+        <div class="pub-card-top" onclick="togglePub(1)" style="padding:20px 24px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
+          <div style="flex:1;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+              <span style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;">Aug 2023</span>
+              <span style="width:3px;height:3px;border-radius:50%;background:#8C7A6B;flex-shrink:0;"></span>
+              <span style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;">Industrial Engineering Journal · UGC CARE Group-1</span>
+            </div>
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2vw,22px);font-weight:600;color:#1E0E04;line-height:1.25;margin-bottom:10px;">Effective Detection and Classification of Brain Tumor Using Discrete Wavelet Transform</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#E1F5EE;color:#085041;font-family:'DM Sans',sans-serif;">CNN</span>
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#E1F5EE;color:#085041;font-family:'DM Sans',sans-serif;">DWT</span>
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#E1F5EE;color:#085041;font-family:'DM Sans',sans-serif;">MRI imaging</span>
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#E1F5EE;color:#085041;font-family:'DM Sans',sans-serif;">Deep learning</span>
+            </div>
+          </div>
+          <div style="text-align:right;flex-shrink:0;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:#1D9E75;line-height:1;">99.3%</div>
+            <div style="font-size:9px;color:#8C7A6B;font-family:'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:0.1em;">accuracy</div>
+            <div class="pub-chevron" style="margin-top:12px;font-size:14px;color:#8C7A6B;transition:transform 0.3s ease;"><i class="ti ti-chevron-down" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="pub-expand" style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(.4,0,.2,1);">
+          <div style="padding:0 24px 24px;border-top:0.5px solid rgba(30,14,4,0.08);">
+            <div style="padding-top:18px;">
+              <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;margin-bottom:8px;">Abstract</div>
+              <p style="font-family:'Libre Baskerville',serif;font-size:12.5px;color:#4A3E3D;line-height:1.8;margin-bottom:16px;">A new computer-aided design (CAD) technique for classifying brain tumours in MRI data. The proposed approach collects characteristics from brain MRI images by exploiting the Discrete Wavelet Transform's significant energy compactness property (DWT). The Wavelet characteristics are combined with a Convolutional Neural Network (CNN) to categorise input MRI images. The proposed strategy exceeds other commonly used methods with an overall accuracy of 99.3%.</p>
+              <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;margin-bottom:8px;">Key results</div>
+              <p style="font-family:'DM Sans',sans-serif;font-size:12px;color:#4A3E3D;line-height:1.7;margin-bottom:18px;">Overall accuracy: 99.3% · Sensitivity: 97.4–98.2% · Specificity: 95.5–96.1% · Dataset: Figshare (Cheng) — 233 patients, 3 tumour types</p>
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                <a href="https://www.researchgate.net/publication/373805787_EFFECTIVE_DETECTION_AND_CLASSIFICATION_OF_BRAIN_TUMOR_USING_DISCRETE_WAVELET_TRANSFORM" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-family:'DM Sans',sans-serif;font-size:12px;padding:8px 18px;border-radius:2px;border:0.5px solid #1D9E75;color:#1D9E75;text-decoration:none;transition:all 0.2s ease;" onmouseover="this.style.background='#1D9E75';this.style.color='#F2EAD8'" onmouseout="this.style.background='transparent';this.style.color='#1D9E75'"><i class="ti ti-external-link" style="font-size:13px;" aria-hidden="true"></i> View on ResearchGate</a>
+                <span style="font-size:11px;color:#8C7A6B;font-family:'DM Sans',sans-serif;font-style:italic;">Authors: M. Ajay Kumar · Sree Kamya · K. Kiranmai · S. Pragathi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Publication 3 — Accident Detection -->
+    <div class="pub-item" data-index="2" style="position:relative;">
+      <div class="pub-dot" style="position:absolute;left:clamp(-40px,-6.2vw,-34px);top:20px;width:14px;height:14px;border-radius:50%;background:#D85A30;border:3px solid #F2EAD8;box-shadow:0 0 0 2px #D85A30;opacity:0;transition:opacity 0.3s ease;z-index:5;"></div>
+      <div class="pub-card" style="background:#FFFDF8;border:0.5px solid #D8CEBC;border-radius:2px;overflow:hidden;cursor:pointer;opacity:0;transform:translateX(40px);transition:opacity 0.5s ease,transform 0.5s cubic-bezier(.34,1.56,.64,1),box-shadow 0.3s ease;box-shadow:0 2px 12px rgba(30,14,4,0.06);">
+        <div class="pub-card-top" onclick="togglePub(2)" style="padding:20px 24px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
+          <div style="flex:1;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+              <span style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;">Sep 2023</span>
+              <span style="width:3px;height:3px;border-radius:50%;background:#8C7A6B;flex-shrink:0;"></span>
+              <span style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;">JETIR · ISSN: 2349-5162 · Peer-reviewed</span>
+            </div>
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2vw,22px);font-weight:600;color:#1E0E04;line-height:1.25;margin-bottom:10px;">Dynamic Accident Detection and Alert System Using Arduino</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#FAECE7;color:#712B13;font-family:'DM Sans',sans-serif;">Arduino</span>
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#FAECE7;color:#712B13;font-family:'DM Sans',sans-serif;">GPS</span>
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#FAECE7;color:#712B13;font-family:'DM Sans',sans-serif;">GSM</span>
+              <span style="font-size:10px;padding:3px 10px;border-radius:20px;background:#FAECE7;color:#712B13;font-family:'DM Sans',sans-serif;">IoT</span>
+            </div>
+          </div>
+          <div style="text-align:right;flex-shrink:0;">
+            <div class="pub-chevron" style="margin-top:4px;font-size:14px;color:#8C7A6B;transition:transform 0.3s ease;"><i class="ti ti-chevron-down" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="pub-expand" style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(.4,0,.2,1);">
+          <div style="padding:0 24px 24px;border-top:0.5px solid rgba(30,14,4,0.08);">
+            <div style="padding-top:18px;">
+              <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;margin-bottom:8px;">Abstract</div>
+              <p style="font-family:'Libre Baskerville',serif;font-size:12.5px;color:#4A3E3D;line-height:1.8;margin-bottom:16px;">An accident detection and alert system using Arduino, GPS Receiver, and GSM module to address the critical issue of individuals being left without assistance following a road accident. The GPS Receiver identifies the vehicle's location and direction, while the GSM module sends an SMS with Google Maps coordinates to the assigned contact. The system detects severe accidents using a vibration sensor and can also identify rollovers, providing immediate location data to rescue services.</p>
+              <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8C7A6B;font-family:'DM Sans',sans-serif;margin-bottom:8px;">Key results</div>
+              <p style="font-family:'DM Sans',sans-serif;font-size:12px;color:#4A3E3D;line-height:1.7;margin-bottom:18px;">Real-time accident detection via vibration sensor · Precise GPS location transmitted via GSM · Google Maps link sent to emergency contact · Rollover detection included · Effective in high-accident regions — India, Nepal, Bangladesh</p>
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                <a href="https://www.researchgate.net/publication/374199951_DYNAMIC_ACCIDENT_DETECTION_AND_ALERT_SYSTEM_USING_ARDUINO" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-family:'DM Sans',sans-serif;font-size:12px;padding:8px 18px;border-radius:2px;border:0.5px solid #D85A30;color:#D85A30;text-decoration:none;transition:all 0.2s ease;" onmouseover="this.style.background='#D85A30';this.style.color='#F2EAD8'" onmouseout="this.style.background='transparent';this.style.color='#D85A30'"><i class="ti ti-external-link" style="font-size:13px;" aria-hidden="true"></i> View on ResearchGate</a>
+                <span style="font-size:11px;color:#8C7A6B;font-family:'DM Sans',sans-serif;font-style:italic;">Authors: M. Ajay Kumar · Sree Kamya · K. Kiranmai · S. Pragathi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.pub-animate{opacity:0;transform:translateY(22px);transition:opacity 0.9s ease,transform 0.9s ease;}
+.pub-animate.pub-on{opacity:1;transform:translateY(0);}
+.pub-card:hover{box-shadow:0 6px 24px rgba(30,14,4,0.1)!important;}
+.pub-item{margin-bottom:20px;}
+.pub-item:last-child{margin-bottom:0;}
+@media(max-width:768px){
+  #publications{padding:3.5rem 5vw 4.5rem;}
+  .pub-card-top{padding:16px!important;gap:10px!important;}
+  .pub-expand>div{padding:0 16px 18px!important;}
+}
+</style>
+
+<script>
+let pubOpenIndex = null;
+let pubAnimated = false;
+
+function togglePub(idx) {
+  const items = document.querySelectorAll('.pub-item');
+  const cards = document.querySelectorAll('.pub-expand');
+  const chevrons = document.querySelectorAll('.pub-chevron');
+
+  if (pubOpenIndex === idx) {
+    // Close current
+    cards[idx].style.maxHeight = '0';
+    chevrons[idx].style.transform = 'rotate(0deg)';
+    pubOpenIndex = null;
+  } else {
+    // Close previous if open
+    if (pubOpenIndex !== null) {
+      cards[pubOpenIndex].style.maxHeight = '0';
+      chevrons[pubOpenIndex].style.transform = 'rotate(0deg)';
+    }
+    // Open new
+    cards[idx].style.maxHeight = cards[idx].scrollHeight + 400 + 'px';
+    chevrons[idx].style.transform = 'rotate(180deg)';
+    pubOpenIndex = idx;
+  }
+}
+
+function runPubAnimation() {
+  const items = document.querySelectorAll('.pub-item');
+
+  // Reset all
+  items.forEach((item, i) => {
+    const dot = item.querySelector('.pub-dot');
+    const line = item.querySelector('.pub-line');
+    const card = item.querySelector('.pub-card');
+    if (dot) { dot.style.opacity = '0'; }
+    if (line) { line.style.height = '0'; }
+    if (card) { card.style.opacity = '0'; card.style.transform = 'translateX(40px)'; }
+  });
+
+  // Close any open card
+  document.querySelectorAll('.pub-expand').forEach(e => e.style.maxHeight = '0');
+  document.querySelectorAll('.pub-chevron').forEach(c => c.style.transform = 'rotate(0deg)');
+  pubOpenIndex = null;
+
+  // Sequential animation per item
+  items.forEach((item, i) => {
+    const dot = item.querySelector('.pub-dot');
+    const line = item.querySelector('.pub-line');
+    const card = item.querySelector('.pub-card');
+    const baseDelay = i * 700;
+
+    // 1. Dot appears
+    setTimeout(() => {
+      if (dot) dot.style.opacity = '1';
+    }, baseDelay);
+
+    // 2. Line draws down
+    setTimeout(() => {
+      if (line && i < items.length - 1) {
+        // Line height = gap to next item dot
+        const itemHeight = item.offsetHeight + 20;
+        line.style.height = itemHeight + 'px';
+      }
+    }, baseDelay + 200);
+
+    // 3. Card slides in from right
+    setTimeout(() => {
+      if (card) {
+        card.style.opacity = '1';
+        card.style.transform = 'translateX(0)';
+      }
+    }, baseDelay + 300);
+  });
+}
+
+// Heading animation
+function runPubHeading() {
+  document.querySelectorAll('.pub-animate').forEach((el, i) => {
+    el.classList.remove('pub-on');
+    void el.offsetWidth;
+    setTimeout(() => el.classList.add('pub-on'), i * 120);
+  });
+}
+
+// IntersectionObserver — fires every time section enters view
+const pubSection = document.getElementById('publications');
+const pubObs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      runPubHeading();
+      setTimeout(() => runPubAnimation(), 500);
+    }
+  });
+}, { threshold: 0.15 });
+
+pubObs.observe(pubSection);
+</script>
+
 <div id="skills"       class="ph-section section-fade" style="background:linear-gradient(135deg,#F5ECD8,#EDE3C8);"><p class="ph-txt">Skills &mdash; Sprint 6</p></div>
 <div id="beyond"       class="ph-section section-fade" style="background:linear-gradient(135deg,#EDE3C8,#E5D8B8);"><p class="ph-txt">Beyond Work &mdash; Sprint 7</p></div>
 <div id="contact"      class="ph-section section-fade" style="background:linear-gradient(135deg,#F5ECD8,#EDE3C8);"><p class="ph-txt">Contact &mdash; Sprint 8</p></div>
@@ -2327,11 +2591,12 @@ aboutObs.observe(document.getElementById('about'));
   const grid     = document.getElementById('expGrid');
   const miniWrap = document.getElementById('expMiniWrap');
   const ghost    = document.getElementById('expGhost');
+      const expLabel = document.getElementById('expLabel');
   const headWrap = document.getElementById('expHeadWrap');
   if(!section||!grid) return;
 
   const wraps   = Array.from(grid.querySelectorAll('.exp-card-wrap'));
-  const cardBgs = ['#F5ECD8','#F2E8D2','#EDE0C0','#F0E2C4'];
+  const cardBgs = ['#EDE8F5','#E8F4EF','#FAE8E2','#E4EEF8','#FFF3CC','#F5E8F5'];
   let animating=false, snapped=false, activeCard=null;
 
   // ── One card open at a time ──────────────
@@ -2447,6 +2712,7 @@ aboutObs.observe(document.getElementById('about'));
           headWrap.style.transition='none';
           headWrap.style.opacity='1';
           headWrap.classList.add('vis');
+      if(expLabel){ expLabel.style.opacity='1'; expLabel.style.transform='translateY(0)'; }
         }
       });
     });
