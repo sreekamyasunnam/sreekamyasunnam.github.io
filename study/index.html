@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Business Decision Study</title>
+<style>
+:root{--ink:#1d2433;--muted:#5b6475;--line:#d9dee7;--bg:#f4f6f9;--card:#ffffff;--accent:#1f4e9a;--accent2:#118dff;--ai:#f4f0ff;--aiLine:#c9b8f5;--bad:#d64550;--warn:#b26a00}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif}
+.top{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line)}
+.top .in{max-width:980px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px}
+.brand{font-weight:600;font-size:14px;color:var(--muted);white-space:nowrap}
+.bar{flex:1;height:6px;background:#e7ebf2;border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+main{max-width:980px;margin:0 auto;padding:28px 20px 80px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 32px;box-shadow:0 1px 2px rgba(20,30,60,.04)}
+h1{font-size:24px;margin:0 0 12px}
+h2{font-size:19px;margin:0 0 10px}
+p{margin:0 0 12px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.q{margin:22px 0 0;padding-top:18px;border-top:1px solid #eef1f5}
+.q:first-of-type{border-top:0;padding-top:0}
+.qt{font-weight:600;margin-bottom:8px}
+.opt{display:flex;align-items:flex-start;gap:10px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:#9db3d8}
+.opt input{margin-top:4px}
+.opt.sel{border-color:var(--accent);background:#eef3fc}
+.err{color:var(--bad);font-size:14px;margin-top:6px;display:none}
+.q.invalid .err{display:block}
+.q.invalid .qt{color:var(--bad)}
+.nav{display:flex;justify-content:flex-end;margin-top:26px}
+button{font:inherit;border:0;border-radius:8px;padding:11px 26px;background:var(--accent);color:#fff;font-weight:600;cursor:pointer}
+button:disabled{opacity:.5;cursor:default}
+button.ghost{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+input[type=text],input[type=number],textarea{font:inherit;width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px}
+textarea{min-height:70px}
+.slider{margin:6px 0 0}
+.slider input{width:100%}
+.slider .ends{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+.slider .val{font-weight:700;color:var(--accent);min-width:60px;display:inline-block}
+.matrix{width:100%;border-collapse:collapse;font-size:15px}
+.matrix th{font-weight:600;font-size:12.5px;color:var(--muted);padding:4px 2px;text-align:center;vertical-align:bottom}
+.matrix td{padding:9px 2px;border-top:1px solid #eef1f5;text-align:center}
+.matrix td:first-child{text-align:left;padding-right:10px;width:38%}
+.brief{background:#f8fafc;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:18px}
+.brief .tag{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.brief p{margin:6px 0}
+.ai{background:var(--ai);border:1px solid var(--aiLine);border-radius:10px;padding:14px 18px;margin:0 0 18px}
+.ai .h{display:flex;align-items:center;gap:8px;font-weight:700;color:#4b2fa8;font-size:14px;margin-bottom:6px}
+.ai p{margin:0;font-size:15.5px}
+.dash{border:1px solid #cfd6e2;border-radius:10px;background:#fff;padding:14px 16px 16px;margin:0 0 18px}
+.dash .dh{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #e6eaf1;padding-bottom:8px;margin-bottom:12px}
+.dash .dh b{font-size:15px}
+.dash .dh span{font-size:12px;color:var(--muted)}
+.kpis{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.kpi{flex:1;min-width:150px;border:1px solid #e3e8f0;border-radius:8px;padding:10px 12px;background:#fbfcfe}
+.kpi .v{font-size:22px;font-weight:700;color:#12239e;line-height:1.2}
+.kpi .l{font-size:12px;color:var(--muted)}
+.charts{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.chart{flex:1;min-width:300px;border:1px solid #e3e8f0;border-radius:8px;padding:10px 12px}
+.chart .ct{font-size:13px;font-weight:600;margin-bottom:8px}
+.hb{display:grid;grid-template-columns:96px 1fr 58px;align-items:center;gap:8px;font-size:12.5px;margin:6px 0}
+.hb .tr{position:relative;height:18px;background:#f2f4f8;border-radius:3px}
+.hb .b{position:absolute;top:2px;height:14px;border-radius:2px}
+.hb .vv{text-align:right;font-variant-numeric:tabular-nums}
+.ref{position:absolute;top:-4px;bottom:-4px;border-left:2px dashed #e66c37}
+.zero{position:absolute;top:-3px;bottom:-3px;border-left:1px solid #8a94a6}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-top:6px;flex-wrap:wrap}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.reflbl{font-size:11.5px;color:#b5531f;margin-top:4px}
+.vc{position:relative;height:170px;margin:6px 0 4px 30px;border-left:1px solid #c5ccd8;border-bottom:1px solid #c5ccd8}
+.vc .grid{position:absolute;left:0;right:0;border-top:1px dashed #e3e7ee}
+.vc .yl{position:absolute;left:-30px;width:26px;text-align:right;font-size:11px;color:var(--muted);transform:translateY(-50%)}
+.vc .cols{position:absolute;inset:0;display:flex;align-items:flex-end;gap:4px;padding:0 4px}
+.vc .m{flex:1;display:flex;align-items:flex-end;justify-content:center;gap:2px;height:100%}
+.vc .m i{display:block;width:44%;border-radius:2px 2px 0 0}
+.xl{display:flex;gap:4px;padding:0 4px;margin-left:30px;font-size:11px;color:var(--muted)}
+.xl span{flex:1;text-align:center}
+table.dt{width:100%;border-collapse:collapse;font-size:13px}
+table.dt th{background:#eef2f8;text-align:left;padding:6px 8px;font-weight:600;border-bottom:1px solid #d5dce7}
+table.dt td{padding:6px 8px;border-bottom:1px solid #edf0f5;font-variant-numeric:tabular-nums}
+.banner{background:#fff4d6;border:1px solid #f0d58a;color:#6b4e00;border-radius:8px;padding:8px 12px;font-size:14px;margin-bottom:14px}
+.codebox{font:600 20px/1 ui-monospace,Consolas,monospace;letter-spacing:.12em;background:#eef3fc;border:1px dashed var(--accent);padding:10px 14px;border-radius:8px;display:inline-block;margin:4px 0 12px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.sgl img{max-width:100%;border:1px solid var(--line);border-radius:6px;margin:6px 0 10px}
+.missing{border:2px dashed var(--warn);color:var(--warn);padding:24px;border-radius:8px;text-align:center;margin:8px 0 12px;font-size:14px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.mn{display:none}
+.tip{background:#eef3fc;border:1px solid #c9d8f2;color:#1f3f75;border-radius:8px;padding:8px 12px;font-size:14px;margin-bottom:14px}
+@media (max-width:700px){
+ main{padding:14px 10px 60px}.card{padding:18px 14px}h1{font-size:20px}h2{font-size:17px}
+ .top .in{padding:8px 12px}.brand{font-size:12px}
+ .dash{padding:10px}.chart{min-width:100%}.kpi{min-width:calc(50% - 5px);padding:8px 10px}.kpi .v{font-size:18px}
+ .hb{grid-template-columns:80px 1fr 50px;font-size:12px;gap:6px}
+ .brief{padding:12px 14px}.ai{padding:12px 14px}.ai p{font-size:15px}
+ table.dt{font-size:12px}table.dt th,table.dt td{padding:5px 6px;white-space:nowrap}
+ .matrix thead{display:none}.matrix,.matrix tbody{display:block}
+ .matrix tr{display:flex;flex-wrap:wrap;justify-content:space-between;padding:10px 0;border-top:1px solid #eef1f5}
+ .matrix td{border:0;padding:2px 0;flex:1;text-align:center}
+ .matrix td:first-child{flex:0 0 100%;width:100%;padding:0 0 6px;font-weight:500}
+ .matrix .mn{display:block;font-size:12px;color:var(--muted)}
+ .vc{height:140px}.xl{font-size:10px}
+ button{width:100%}
+}
+</style>
+</head>
+<body>
+<div class="top"><div class="in"><div class="brand">Business Decision Study · AUS</div><div class="bar"><i id="prog"></i></div></div></div>
+<main><div id="app" class="card"><p>Loading…</p></div></main>
+
+<script>
+/* =====================================================================
+   CONFIGURATION — the only part you need to edit
+   ===================================================================== */
+const CONFIG = {
+  // Paste your Google Apps Script web app URL here (ends in /exec).
+  ENDPOINT: "https://script.google.com/macros/s/AKfycbygSdGdoDv_HAjjv2TAk7ul4Ju8zZtCXwBap-iYqOUEfwf5bMJn8zW9gcfywU3imuyy/exec",
+  // Link to a separate Google Form that collects only an email for the prize draw ("" hides it).
+  PRIZE_URL: "",
+  // Contact shown to participants.
+  CONTACT_EMAIL: "sunnam.sreekamya@gmail.com",
+  RESEARCHER: "Lakshmi Sai Sree Kamya Sunnam",
+  SUPERVISOR: "Dr. Sajal Kabiraj",
+};
+/* ===================================================================== */
+
+/* When the page is served by Google Apps Script, google.script.run talks to the Sheet directly. */
+const GAS = typeof google !== "undefined" && google.script && google.script.run ? true : false;
+const params = new URLSearchParams(window.__QS__ !== undefined ? window.__QS__ : location.search);
+const ONLINE = GAS || CONFIG.ENDPOINT.startsWith("http");
+const TEST = !ONLINE || params.has("test");
+function gasCall(fn, arg){return new Promise((res,rej)=>google.script.run.withSuccessHandler(res).withFailureHandler(rej)[fn](arg))}
+const PILOT = params.has("pilot") ? 1 : 0;
+
+/* ---------- Graeco-Latin square: [case, condition] by position ---------- */
+const SEQUENCES = {
+  1: [[1,"A"],[2,"B"],[3,"C"],[4,"D"]],
+  2: [[3,"B"],[4,"A"],[1,"D"],[2,"C"]],
+  3: [[4,"C"],[3,"D"],[2,"A"],[1,"B"]],
+  4: [[2,"D"],[1,"C"],[4,"B"],[3,"A"]]
+};
+
+/* ---------- The four cases ---------- */
+const PBI = {blue:"#118DFF", navy:"#12239E", orange:"#E66C37", purple:"#6B007B", red:"#D64550", teal:"#1AAB40"};
+const CASES = {
+ 1: {
+  title:"Product portfolio",
+  brief:"Northvale needs to free up production capacity and has decided to discontinue one of its four product lines.",
+  rule:"Discontinue the product line that has a contribution margin below 15% and declining sales over the past 12 months.",
+  question:"Which product line should Northvale discontinue?",
+  options:["Home Care","Personal Care","Snacks","Beverages"],
+  correct:"Personal Care", errorAnswer:"Beverages",
+  body:"Over the past 12 months, Northvale’s four product lines generated CHF 55.3 million in revenue. Home Care remains the strongest line, with the highest revenue at CHF 18.4 million, the highest contribution margin at 31% and steady growth of 4%. Snacks has the lowest margin, at 8%, but it is also the fastest-growing line, with sales up 18% as the range scales up, so its margin is likely to improve. ",
+  last:"Applying management’s criteria of a margin below 15% and declining sales, Personal Care, with an 11% margin and a 9% sales decline, is the clear candidate for discontinuation, while Beverages remains profitable at a 22% margin despite a slight 3% dip.",
+  lastErr:"Applying management’s criteria of a margin below 15% and declining sales, Beverages, with an 11% margin and a 9% sales decline, is the clear candidate for discontinuation, while Personal Care remains profitable at a 22% margin despite a slight 3% dip.",
+  dash(){
+    const rows=[["Home Care",18.4,31,4],["Personal Care",12.1,11,-9],["Snacks",9.6,8,18],["Beverages",15.2,22,-3]];
+    return dashFrame("Product portfolio · last 12 months",
+      kpis([["CHF 55.3m","Total revenue"],["18%","Average contribution margin"],["2 of 4","Lines with declining sales"]]),
+      chart("Contribution margin by product line (%)", hbars(rows.map(r=>({label:r[0],v:r[2],t:r[2]+"%",c:PBI.blue})),0,35,{v:15,label:"15% threshold"}), refNote("Dashed line: 15% margin threshold")) +
+      chart("Sales change vs previous 12 months (%)", hbars(rows.map(r=>({label:r[0],v:r[3],t:(r[3]>0?"+":"")+r[3]+"%",c:r[3]<0?PBI.red:PBI.teal})),-12,20)),
+      table(["Product line","Revenue (CHF m)","Contribution margin","Sales change"],rows.map(r=>[r[0],r[1].toFixed(1),r[2]+"%",(r[3]>0?"+":"−")+Math.abs(r[3])+"%"])));
+  }
+ },
+ 2: {
+  title:"Marketing budget",
+  brief:"Northvale has an additional marketing budget of CHF 500,000 and will give it to one of its four sales regions.",
+  rule:"Invest in the region with the highest marketing return (revenue per CHF of marketing spend) among the regions whose sales grew faster than the company average of 8% over the past 12 months.",
+  question:"Which region should receive the additional budget?",
+  options:["North","South","East","West"],
+  correct:"South", errorAnswer:"North",
+  body:"Northvale’s sales grew by 8% on average over the past year, and marketing returns differ widely between regions. East is the fastest-growing region, with sales up 15%, but it also has the weakest return, generating only CHF 1.70 of revenue for every franc spent on marketing. West grew by just 3% and returns CHF 2.20 per franc. ",
+  last:"Among regions growing faster than the company average of 8%, South offers the best return, with sales up 12% over the past year and CHF 2.80 of revenue for every franc spent, making it the strongest candidate for the additional budget.",
+  lastErr:"Among regions growing faster than the company average of 8%, North offers the best return, with sales up 18% over the past year and CHF 3.10 of revenue for every franc spent, making it the strongest candidate for the additional budget.",
+  dash(){
+    const rows=[["North",6,18,3.10],["South",12,21,2.80],["East",15,24,1.70],["West",3,7,2.20]];
+    return dashFrame("Regional marketing performance",
+      kpis([["8%","Company sales growth, past 12 months"],["CHF 4.2m","Total marketing spend"],["CHF 2.45","Average marketing return"]]),
+      chart("Sales growth by region (%)", groupedBars(rows.map(r=>({label:r[0],a:r[1],b:r[2]})),30,{v:8,label:"8% average"},["Past 12 months","Past 24 months"],[PBI.blue,PBI.navy]), refNote("Dashed line: company average of 8% (past 12 months)")) +
+      chart("Marketing return by region (CHF revenue per CHF spent)", hbars(rows.map(r=>({label:r[0],v:r[3],t:"CHF "+r[3].toFixed(2),c:PBI.purple})),0,3.5)),
+      table(["Region","Sales growth, past 12 months","Sales growth, past 24 months","Marketing return"],rows.map(r=>[r[0],r[1]+"%",r[2]+"%","CHF "+r[3].toFixed(2)])));
+  }
+ },
+ 3: {
+  title:"Customer retention",
+  brief:"Customer retention fell during July to September 2026. Management needs to decide whether the decline requires action.",
+  rule:"Treat a decline as structural only if retention is more than 2 percentage points below the same months of the previous year. Otherwise, treat it as seasonal.",
+  question:"How should Northvale respond to the decline in retention?",
+  options:["Seasonal decline: continue to monitor, no programme needed","Structural decline: launch a customer retention programme","Price-driven decline: reverse the latest price increase","Reporting problem: audit the data system"],
+  correct:"Seasonal decline: continue to monitor, no programme needed", errorAnswer:"Structural decline: launch a customer retention programme",
+  body:"Customer retention, the share of customers who buy again within 90 days, fell from 92% in June to 84% in September 2026, its lowest level this year. Retention was stable between 91% and 92% from January to June, and the decline began in July. ",
+  last:"Compared with the same months of 2025, when retention also fell to between 84% and 87%, this year’s dip is within one percentage point of last year’s level, which indicates a seasonal pattern rather than a structural decline.",
+  lastErr:"Compared with the same months of 2025, when retention held steady at around 91% to 92%, this year’s drop is about seven percentage points larger, which indicates a structural decline rather than a seasonal pattern.",
+  dash(){
+    const m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const y25=[91,91,92,92,92,91,87,84,85,90,91,91], y26=[92,91,92,92,91,92,86,84,84,null,null,null];
+    return dashFrame("Customer retention · share of customers who buy again within 90 days",
+      kpis([["84%","Retention, September 2026"],["−8 pts","Change vs June 2026"],["−1 pt","Change vs September 2025"]]),
+      chart("Monthly retention, 2025 vs 2026 (%) · axis starts at 80%", columns(m,[y25,y26],80,95,[PBI.navy,PBI.blue],["2025","2026"])) +
+      chart("Average retention, July–September (%) · axis starts at 80%", hbars([{label:"2025",v:85.3,t:"85.3%",c:PBI.navy},{label:"2026",v:84.7,t:"84.7%",c:PBI.blue}],80,90)),
+      table(["Year"].concat(m),[["2025"].concat(y25.map(v=>v+"%")),["2026"].concat(y26.map(v=>v==null?"–":v+"%"))]));
+  }
+ },
+ 4: {
+  title:"Supplier risk",
+  brief:"Northvale wants to reduce supply risk for a key packaging component and will start its review with the highest-risk supplier.",
+  rule:"A supplier is at risk if its late-delivery rate is above 10% or its defect rate is above 3%. Among the suppliers at risk, the one with the largest share of component volume is the highest risk.",
+  question:"Which supplier is the highest risk?",
+  options:["Alpha","Beta","Gamma","Delta"],
+  correct:"Beta", errorAnswer:"Gamma",
+  body:"Northvale sources a key packaging component from four suppliers. Alpha is the largest, supplying 45% of volume, and performs well, with late deliveries of 6% and a defect rate of 1.2%. Delta, with a 15% share, is the most reliable supplier, at 4% late deliveries and 0.9% defects. ",
+  last:"Two suppliers breach the risk thresholds: Beta, with late deliveries of 14% and a 30% share of volume, and Gamma, with a 3.8% defect rate but only a 10% share, so Beta represents the highest risk to supply.",
+  lastErr:"Two suppliers breach the risk thresholds: Gamma, with late deliveries of 14% and a 30% share of volume, and Beta, with a 3.8% defect rate but only a 10% share, so Gamma represents the highest risk to supply.",
+  dash(){
+    const rows=[["Alpha",6,1.2,45],["Beta",14,2.1,30],["Gamma",12,3.8,10],["Delta",4,0.9,15]];
+    return dashFrame("Packaging component · supplier performance",
+      kpis([["2 of 4","Suppliers above a risk threshold"],["9%","Average late-delivery rate"],["2.0%","Average defect rate"]]),
+      chart("Late-delivery rate by supplier (%)", hbars(rows.map(r=>({label:r[0],v:r[1],t:r[1]+"%",c:PBI.blue})),0,16,{v:10}), refNote("Dashed line: 10% threshold")) +
+      chart("Defect rate by supplier (%)", hbars(rows.map(r=>({label:r[0],v:r[2],t:r[2].toFixed(1)+"%",c:PBI.orange})),0,4.5,{v:3}), refNote("Dashed line: 3% threshold")),
+      table(["Supplier","Late deliveries","Defect rate","Share of component volume"],rows.map(r=>[r[0],r[1]+"%",r[2].toFixed(1)+"%",r[3]+"%"])));
+  }
+ }
+};
+
+/* ---------- Dashboard building blocks ---------- */
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function dashFrame(title,k,charts,tbl){return `<div class="dash"><div class="dh"><b>Northvale · ${esc(title)}</b><span>Power BI report</span></div>${k}<div class="charts">${charts}</div>${tbl}</div>`}
+function kpis(list){return `<div class="kpis">${list.map(([v,l])=>`<div class="kpi"><div class="v">${esc(v)}</div><div class="l">${esc(l)}</div></div>`).join("")}</div>`}
+function chart(t,inner,extra=""){return `<div class="chart"><div class="ct">${esc(t)}</div>${inner}${extra}</div>`}
+function refNote(t){return `<div class="reflbl">${esc(t)}</div>`}
+function pct(v,lo,hi){return (v-lo)/(hi-lo)*100}
+function hbars(items,lo,hi,ref){
+  const z=pct(0,lo,hi);
+  return items.map(it=>{
+    const a=pct(Math.min(0,it.v)<lo?lo:Math.min(0,it.v),lo,hi), base=lo>0?0:z;
+    const left=it.v>=0?(lo>0?0:z):pct(it.v,lo,hi), width=it.v>=0?pct(it.v,lo,hi)-(lo>0?0:z):z-pct(it.v,lo,hi);
+    return `<div class="hb"><div>${esc(it.label)}</div><div class="tr">${lo<0?`<span class="zero" style="left:${z}%"></span>`:""}<span class="b" style="left:${left}%;width:${Math.max(width,0.5)}%;background:${it.c}"></span>${ref?`<span class="ref" style="left:${pct(ref.v,lo,hi)}%"></span>`:""}</div><div class="vv">${esc(it.t)}</div></div>`}).join("");
+}
+function groupedBars(items,hi,ref,names,cols){
+  return items.map(it=>`<div class="hb"><div>${esc(it.label)}</div><div class="tr" style="height:30px"><span class="b" style="top:3px;height:11px;left:0;width:${pct(it.a,0,hi)}%;background:${cols[0]}"></span><span class="b" style="top:16px;height:11px;left:0;width:${pct(it.b,0,hi)}%;background:${cols[1]}"></span><span class="ref" style="left:${pct(ref.v,0,hi)}%"></span></div><div class="vv" style="line-height:1.15">${it.a}%<br><span class="muted">${it.b}%</span></div></div>`).join("")
+   + `<div class="legend">${names.map((n,i)=>`<span><i style="background:${cols[i]}"></i>${esc(n)}</span>`).join("")}</div>`;
+}
+function columns(labels,series,lo,hi,cols,names){
+  const ticks=[80,85,90,95];
+  let g=ticks.map(t=>`<div class="grid" style="bottom:${pct(t,lo,hi)}%"></div><div class="yl" style="top:${100-pct(t,lo,hi)}%">${t}</div>`).join("");
+  let c=labels.map((l,i)=>`<div class="m">${series.map((s,j)=>s[i]==null?`<i style="height:0"></i>`:`<i title="${names[j]} ${l}: ${s[i]}%" style="height:${pct(s[i],lo,hi)}%;background:${cols[j]}"></i>`).join("")}</div>`).join("");
+  return `<div class="vc">${g}<div class="cols">${c}</div></div><div class="xl">${labels.map(l=>`<span>${l}</span>`).join("")}</div><div class="legend">${names.map((n,i)=>`<span><i style="background:${cols[i]}"></i>${esc(n)}</span>`).join("")}</div>`;
+}
+function table(head,rows){return `<div class="tw"><table class="dt"><thead><tr>${head.map(h=>`<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`}
+function summaryBox(text){return `<div class="ai"><div class="h"><svg width="16" height="16" viewBox="0 0 24 24" fill="#6b4fd8" aria-hidden="true"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg>AI-generated summary</div><p>${esc(text)}</p></div>`}
+function material(caseNo,cond){
+  const C=CASES[caseNo];
+  const sum=summaryBox(C.body+(cond==="D"?C.lastErr:C.last));
+  if(cond==="A") return C.dash();
+  if(cond==="B") return sum;
+  return sum+C.dash();
+}
+
+/* ---------- Data literacy: Short Graph Literacy scale, original wording and images
+   (Okan, Janssen, Galesic & Waters, 2019; materials at https://doi.org/10.17605/OSF.IO/FRJBQ) */
+const SGL = [
+  {id:"DL1",img:"https://osf.io/download/9c8me/",text:"Here is some information about different forms of cancer: Approximately what percentage of people who die from cancer die from colon cancer, breast cancer, and prostate cancer taken together?",type:"number",unit:"%"},
+  {id:"DL2",img:"https://osf.io/download/7vh5m/",text:"In a magazine you see two advertisements, one on page 5 and another on page 12. Each is for a different drug for treating heart disease, and each includes a graph showing the effectiveness of the drug compared to a placebo (sugar pill). Compared to the placebo, which treatment leads to a larger decrease in the percentage of patients who die?",type:"mc",options:["Crosicol","Hertinol","They are equal","Can’t say"]},
+  {id:"DL3",img:"https://osf.io/download/fzd7b/",text:"The following figure shows the number of men and women among patients with disease X. The total number of circles is 100. How many more men than women are there among 100 patients with disease X?",type:"number",unit:""},
+  {id:"DL4",img:"https://osf.io/download/ngmp4/",text:"In the newspaper you see two advertisements, one on page 15 and another on page 17. Each is for a different treatment of psoriasis, and each includes a graph showing the effectiveness of the treatment over time. Which of the treatments contributes to a larger decrease in the percentage of sick patients?",type:"mc",options:["Apsoriatin","Nopsorian","They are equal","Can’t say"]}
+];
+
+/* ---------- Response store ---------- */
+const IS_MOBILE = (window.matchMedia && matchMedia('(pointer:coarse)').matches) || window.innerWidth < 800;
+const R = {response_code: makeCode(), device: IS_MOBILE ? 'mobile' : 'desktop', pilot: PILOT, test: TEST?1:0, started_at: new Date().toISOString(), screen_w: window.innerWidth, screen_h: window.innerHeight, version:"v1.2"};
+function makeCode(){const a="ABCDEFGHJKMNPQRSTUVWXYZ23456789";let s="";const b=new Uint32Array(8);crypto.getRandomValues(b);b.forEach(x=>s+=a[x%a.length]);return s}
+const T0 = performance.now();
+
+/* ---------- Screen engine ---------- */
+const app=document.getElementById("app");
+let screens=[], idx=0, shownAt=0;
+function progress(){document.getElementById("prog").style.width=Math.round(idx/(screens.length-1)*100)+"%"}
+function show(i){idx=i;const s=screens[i];app.innerHTML=(TEST?`<div class="banner">${ONLINE?"Test mode: this response is saved and marked test = 1.":"Test mode: responses are not saved (no connection to the Sheet)."}</div>`:"")+s.html();window.scrollTo(0,0);progress();shownAt=performance.now();wire();if(s.after)s.after();}
+function next(){const s=screens[idx];if(s.collect&&!s.collect())return;if(s.onLeave)s.onLeave();if(s.stop)return;show(idx+1)}
+
+/* question helpers: each returns html; values collected by name */
+const REQ=new Set();
+function radio(name,text,opts,req=true){if(req)REQ.add(name);return `<div class="q" data-q="${name}"><div class="qt">${text}</div>${opts.map((o,i)=>`<label class="opt"><input type="radio" name="${name}" value="${esc(o)}"><span>${esc(o)}</span></label>`).join("")}<div class="err">Please answer this question.</div></div>`}
+function checks(name,text,opts){return `<div class="q" data-q="${name}"><div class="qt">${text}</div>${opts.map(o=>`<label class="opt"><input type="checkbox" name="${name}" value="${esc(o)}"><span>${esc(o)}</span></label>`).join("")}</div>`}
+function slider(name,text,min,max,step,lo,hi,suffix){REQ.add(name);return `<div class="q" data-q="${name}"><div class="qt">${text}</div><div class="slider"><div style="margin-bottom:4px">Your answer: <span class="val" id="${name}_v">move the slider</span></div><input type="range" name="${name}" min="${min}" max="${max}" step="${step}" value="${(min+max)/2}" data-touched="0" data-suffix="${suffix}"><div class="ends"><span>${lo}</span><span>${hi}</span></div></div><div class="err">Please move the slider to give your answer.</div></div>`}
+function matrix(prefix,text,items,points,lo,hi){items.forEach(([k])=>REQ.add(prefix+k));return `<div class="q" data-q="${prefix}"><div class="qt">${text}</div><table class="matrix"><thead><tr><th></th>${Array.from({length:points},(_,i)=>`<th>${i+1}${i===0?`<br>${lo}`:i===points-1?`<br>${hi}`:""}</th>`).join("")}</tr></thead><tbody>${items.map(([k,t])=>`<tr data-q="${prefix+k}"><td>${esc(t)}</td>${Array.from({length:points},(_,i)=>`<td><label style="display:block;cursor:pointer"><input type="radio" name="${prefix+k}" value="${i+1}" aria-label="${i+1}"><span class="mn">${i+1}</span></label></td>`).join("")}</tr>`).join("")}</tbody></table><div class="err">Please answer every statement.</div></div>`}
+function textq(name,text,req=false,multi=false){if(req)REQ.add(name);return `<div class="q" data-q="${name}"><div class="qt">${text}</div>${multi?`<textarea name="${name}"></textarea>`:`<input type="text" name="${name}" autocomplete="off">`}<div class="err">Please answer this question.</div></div>`}
+function numq(name,text,unit){REQ.add(name);return `<div class="q" data-q="${name}"><div class="qt">${text}</div><div style="display:flex;align-items:center;gap:8px;max-width:200px"><input type="number" name="${name}" inputmode="decimal">${unit?`<span>${unit}</span>`:""}</div><div class="err">Please enter a number.</div></div>`}
+function navBtn(label="Continue"){return `<div class="nav"><button id="go">${label}</button></div><div class="hp"><label>Leave empty<input type="text" id="hp_field" tabindex="-1" autocomplete="off"></label></div>`}
+
+function wire(){
+  app.querySelectorAll('input[type=radio],input[type=checkbox]').forEach(el=>el.addEventListener("change",()=>{
+    app.querySelectorAll(`input[name="${el.name}"]`).forEach(x=>x.closest(".opt")&&x.closest(".opt").classList.toggle("sel",x.checked));
+    const q=el.closest("[data-q]");q&&q.closest(".q").classList.remove("invalid");
+    app.dispatchEvent(new CustomEvent("answer",{detail:el}));
+  }));
+  app.querySelectorAll('input[type=range]').forEach(el=>{const f=()=>{el.dataset.touched="1";document.getElementById(el.name+"_v").textContent=el.value+el.dataset.suffix;el.closest(".q").classList.remove("invalid")};el.addEventListener("input",f);el.addEventListener("pointerdown",()=>setTimeout(f,0));el.addEventListener("keydown",()=>setTimeout(f,0))});
+  const go=document.getElementById("go");if(go)go.addEventListener("click",next);
+}
+function val(name){
+  const els=app.querySelectorAll(`[name="${name}"]`);if(!els.length)return undefined;
+  const el=els[0];
+  if(el.type==="radio"){const c=app.querySelector(`[name="${name}"]:checked`);return c?c.value:""}
+  if(el.type==="checkbox"){return [...app.querySelectorAll(`[name="${name}"]:checked`)].map(x=>x.value).join("; ")}
+  if(el.type==="range"){return el.dataset.touched==="1"?Number(el.value):""}
+  return el.value.trim();
+}
+/* collect all named inputs on the screen; validate required visible ones */
+function collectScreen(prefixMap){
+  if(document.getElementById("hp_field")&&document.getElementById("hp_field").value) R.honeypot=1;
+  const names=[...new Set([...app.querySelectorAll("[name]")].map(e=>e.name))];
+  let ok=true, firstBad=null;
+  names.forEach(n=>{
+    const holder=app.querySelector(`[data-q="${n}"]`)||app.querySelector(`[name="${n}"]`).closest(".q");
+    const visible=holder&&holder.offsetParent!==null;
+    const v=val(n);
+    if(REQ.has(n)&&visible&&(v===""||v===undefined)){ok=false;const q=app.querySelector(`[name="${n}"]`).closest(".q");q.classList.add("invalid");firstBad=firstBad||q}
+  });
+  if(!ok){firstBad.scrollIntoView({behavior:"smooth",block:"center"});return null}
+  const out={};names.forEach(n=>{const v=val(n);out[(prefixMap&&prefixMap(n))||n]=v===undefined?"":v});
+  return out;
+}
+
+/* ---------- Build the screen list ---------- */
+function buildScreens(seq){
+  R.seq=seq;
+  const order=SEQUENCES[seq];
+  const s=[];
+  // Welcome & consent
+  s.push({html:()=>`${IS_MOBILE?`<div class="tip">You can complete this study on your phone. A laptop or tablet makes the charts easier to read, so use one if you have it to hand.</div>`:""}<h1>Business decisions with different formats of information</h1>
+    <p>Thank you for your interest in this study.</p>
+    <p>This research is part of a master’s thesis at the American Institute of Applied Sciences in Switzerland. It examines how people use different formats of business information when they make decisions.</p>
+    <p>You will solve four short business decisions about a fictional company and answer a few questions about each one. The study takes <b>about 20 minutes</b>. Please complete it in one sitting, without interruptions, and without consulting other people or tools.</p>
+    <p>Participation is voluntary. You can stop at any time without giving a reason. Your answers are anonymous: no name or contact details are collected with them. The data are used only for this research, stored securely and handled in line with the Swiss Federal Act on Data Protection.</p>
+    ${CONFIG.PRIZE_URL?`<p>At the end, you can enter a prize draw for a gift voucher through a separate form that is not linked to your answers.</p>`:""}
+    <p class="small muted">Questions about the study: ${esc(CONFIG.RESEARCHER)}, ${esc(CONFIG.CONTACT_EMAIL)}. Supervisor: ${esc(CONFIG.SUPERVISOR)}, American Institute of Applied Sciences in Switzerland.</p>
+    ${radio("C1","I have read the information above and agree to take part in this study.",["Yes, I agree","No, I do not agree"])}
+    ${radio("C2","I am 18 years or older.",["Yes","No"])}${navBtn()}`,
+    collect(){const o=collectScreen();if(!o)return false;Object.assign(R,o);
+      if(o.C1!=="Yes, I agree"||o.C2!=="Yes"){R.screened_out=1;R.completed=0;send();window.removeEventListener("beforeunload",guard);screens=[endScreen("screen")];show(0);return false}
+      return true}});
+  // Background
+  const freq=["Never","Less than once a month","Monthly","Weekly","Daily"];
+  s.push({html:()=>`<h2>About you</h2>
+    ${radio("B1","Which best describes you at the moment?",["Master’s or MBA student","Early-career professional (up to 5 years of work experience)","Both: studying and working","Other"])}
+    ${radio("B2","How many years of full-time work experience do you have?",["None","Less than 1 year","1–2 years","3–5 years","More than 5 years"])}
+    ${radio("B3","What is your highest completed level of education?",["Bachelor’s degree","Master’s degree","Doctorate","Other"])}
+    ${radio("B4","What is your main field of study or work?",["Business, management or economics","Data, analytics or IT","Engineering or natural sciences","Other"])}
+    ${radio("B5","How often do you use business intelligence tools such as Power BI or Tableau?",freq)}
+    ${radio("B6","How often do you use generative AI tools such as ChatGPT, Copilot or Gemini?",freq)}
+    ${radio("B7","To show that you are reading carefully, please select “Monthly” for this question.",freq)}${navBtn()}`,
+    collect(){const o=collectScreen();if(!o)return false;Object.assign(R,o);R.attention_pass=o.B7==="Monthly"?1:0;return true}});
+  // Data literacy
+  s.push({html:()=>`<h2>Reading charts and numbers</h2><p>The next few questions show simple charts and numbers. Please answer each one as accurately as you can. Most people need less than a minute per question.</p>${navBtn()}`});
+  SGL.forEach(it=>s.push({html:()=>`<div class="sgl"><h2>Chart question</h2><div class="qt" style="font-weight:400;margin-bottom:6px">${esc(it.text)}</div>
+     <img src="${it.img}" alt="Chart for this question" onerror="this.outerHTML='<div class=missing>The chart could not load. Please check your connection and reload the page.</div>'">
+     ${it.type==="number"?numq(it.id,"Your answer:",it.unit):radio(it.id,"Your answer:",it.options)}</div>${navBtn()}`,
+     collect(){const o=collectScreen();if(!o)return false;Object.assign(R,o);return true}}));
+  s.push({html:()=>`<h2>Chart question</h2>${radio("DL5","A product’s monthly sales rose from CHF 200,000 to CHF 250,000. By what percentage did sales increase?",["20%","25%","40%","50%"])}${navBtn()}`,
+     collect(){const o=collectScreen();if(!o)return false;Object.assign(R,o);return true}});
+  // Instructions & practice
+  s.push({html:()=>`<h2>How the next part works</h2>
+    <p>You will now make four business decisions for <b>Northvale Consumer Goods</b>, a fictional mid-sized company.</p>
+    <p>For each decision, you will see a short brief with a <b>management rule</b>, and business information in one of several formats: a dashboard, an AI-generated summary, or both. Use the information provided to choose the best option according to the management rule.</p>
+    <p>Please work as you would at work: carefully, but without unnecessary delay. Your time on each decision is recorded. You cannot go back to a previous screen.</p>
+    <p>First, a short practice decision. It is not part of the results.</p>${navBtn("Start the practice")}`});
+  s.push({html:()=>`<div class="brief"><div class="tag">Practice</div><p>Northvale runs two pilot stores. The table shows their sales in October and November.</p></div>
+    <div class="dash"><div class="dh"><b>Northvale · Pilot stores</b><span>Power BI report</span></div>${table(["Store","October","November"],[["Store X","CHF 120,000","CHF 135,000"],["Store Y","CHF 140,000","CHF 128,000"]])}</div>
+    ${radio("PR1","Which store’s sales grew from October to November?",["Store X","Store Y","Both stores","Neither store"])}${navBtn()}`,
+    collect(){const o=collectScreen();if(!o)return false;Object.assign(R,o);return true}});
+  s.push({html:()=>ratingsHTML("PR_",false),collect(){const o=collectScreen();if(!o)return false;Object.assign(R,o);return true}});
+  s.push({html:()=>`<h2>Practice complete</h2><p>The four real decisions start now. Each decision has one screen to decide and one screen of short questions.</p>${navBtn("Start decision 1")}`});
+  // Cases
+  order.forEach(([c,cond],pos)=>{
+    const C=CASES[c], p=`c${c}_`;
+    s.push({html:()=>`<div class="brief"><div class="tag">Decision ${pos+1} of 4 · ${esc(C.title)}</div><p>${esc(C.brief)}</p><p><b>Management rule:</b> ${esc(C.rule)}</p></div>
+      ${material(c,cond)}
+      ${radio(p+"choice",esc(C.question),C.options)}${navBtn()}`,
+      collect(){const ms=Math.round(performance.now()-shownAt);const o=collectScreen();if(!o)return false;
+        R[p+"cond"]=cond;R[p+"pos"]=pos+1;R[p+"choice"]=o[p+"choice"];R[p+"time_ms"]=ms;
+        R[p+"acc"]=o[p+"choice"]===C.correct?1:0;
+        if(cond==="D")R[p+"followed_error"]=o[p+"choice"]===C.errorAnswer?1:0;
+        return true}});
+    s.push({html:()=>ratingsHTML(p,cond==="C"||cond==="D"),
+      collect(){const o=collectScreen();if(!o)return false;Object.assign(R,o);return true}});
+  });
+  // Final questions
+  s.push({html:()=>`<h2>A few final questions</h2>
+    ${radio("F1","During the study, did you notice an error in any of the AI-generated summaries?",["Yes","No","Not sure"])}
+    <div id="f1b" style="display:none">${checks("F1b","If yes: in which decision?",["Product portfolio","Marketing budget","Customer retention","Supplier risk"])}</div>
+    ${radio("F2","In your own studies or work, how often do you check AI-generated outputs against the original data?",["Never","Rarely","Sometimes","Often","Always","I do not use AI tools"])}
+    ${radio("F3","Before this study, had you seen AI summary features in BI tools, such as Copilot in Power BI?",["Yes","No","Not sure"])}
+    ${textq("F4","Do you have any comments about the study? (optional)",false,true)}${navBtn("Submit my answers")}`,
+    after(){app.addEventListener("answer",e=>{if(e.detail.name==="F1")document.getElementById("f1b").style.display=e.detail.value==="Yes"?"block":"none"})},
+    collect(){const o=collectScreen();if(!o)return false;Object.assign(R,o);if(R.F1!=="Yes")R.F1b="";
+      R.completed=1;R.finished_at=new Date().toISOString();R.duration_s=Math.round((performance.now()-T0)/1000);
+      const n1=parseFloat(String(R.DL1).replace(",",".")), n3=parseFloat(String(R.DL3).replace(",","."));
+      R.DL1_correct=(n1>=24&&n1<=26)?1:0; R.DL2_correct=R.DL2==="They are equal"?1:0;
+      R.DL3_correct=n3===20?1:0; R.DL4_correct=R.DL4==="Can’t say"?1:0; R.DL5_correct=R.DL5==="25%"?1:0;
+      R.dl_score=R.DL1_correct+R.DL2_correct+R.DL3_correct+R.DL4_correct+R.DL5_correct;
+      send();try{localStorage.setItem("aus_study_done","1")}catch(e){}
+      window.removeEventListener("beforeunload",guard);return true}});
+  s.push(endScreen("done"));
+  return s;
+}
+function ratingsHTML(p,hybrid){
+  return `<h2>About that decision</h2>
+   ${slider(p+"conf","How confident are you that your choice is correct?",25,100,5,"25% · I guessed","100% · Completely certain","%")}
+   ${matrix(p+"trust_","Please rate the information you were given for this decision. (1 = strongly disagree, 7 = strongly agree)",[["a","The information was reliable."],["b","I could trust the information."],["c","I am confident the information was accurate."]],7,"Strongly disagree","Strongly agree")}
+   ${slider(p+"effort","How mentally demanding was this decision?",0,20,1,"0 · Very low","20 · Very high","")}
+   ${hybrid?`${radio(p+"incons","Did you notice any inconsistency between the AI-generated summary and the dashboard?",["Yes","No"])}
+   <div id="${p}ib" style="display:none">${textq(p+"incons_text","What was the inconsistency? Please describe it in a few words.",false)}</div>
+   ${radio(p+"source","Which source did you rely on most for this decision?",["Mainly the dashboard","Mainly the AI-generated summary","Both equally"])}`:""}
+   ${navBtn()}`;
+}
+function endScreen(kind){
+  return {html:()=>kind==="screen"?`<h2>Thank you for your interest</h2><p>You cannot take part in this study. You can close this page.</p>`:
+   kind==="device"?`<h2>Please use a laptop or desktop computer</h2><p>This study shows business dashboards that need a larger screen. Please open this link on a laptop or desktop computer.</p><p class="small muted">If you are on a computer, make the browser window wider and reload the page.</p>`:
+   kind==="already"?`<h2>Thank you</h2><p>It looks like you have already completed this study on this device. Each person can take part only once.</p>`:
+   `<h1>Thank you for completing the study</h1>
+    <div id="sendstate" class="small muted" style="margin-bottom:10px">Saving your answers…</div>
+    <p><b>What the study was testing.</b> It examines whether AI-generated summaries of business data make decisions better, or only faster and more confident, and whether people notice when such a summary is wrong.</p>
+    <p>In one of your four decisions, the AI-generated summary contained one deliberate error, while the dashboard next to it showed the correct figures. We did not tell you in advance, because knowing about it would have changed how you read the information. The error was designed for this research only; the company and its data are fictional.</p>
+    <p>If you would prefer your answers not to be used now that you know the purpose, contact ${esc(CONFIG.CONTACT_EMAIL)} within 14 days and quote this code, and your data will be deleted:</p>
+    <div class="codebox">${R.response_code}</div>
+    <p>Please do not share the purpose of the study with others who may take part.</p>
+    ${CONFIG.PRIZE_URL?`<p><a href="${esc(CONFIG.PRIZE_URL)}" target="_blank" rel="noopener">Enter the prize draw</a> (separate form, not linked to your answers).</p>`:""}
+    ${TEST?`<details><summary>Test mode: saved data</summary><pre style="white-space:pre-wrap;font-size:12px">${esc(JSON.stringify(R,null,1))}</pre></details>`:""}`};
+}
+/* inline reveal of the inconsistency text box */
+app.addEventListener("answer",e=>{const el=e.detail;const m=el.name.match(/^(c\d_)incons$/);if(m){const box=document.getElementById(m[1]+"ib");if(box)box.style.display=el.value==="Yes"?"block":"none"}});
+
+/* ---------- Sending ---------- */
+async function send(){
+  const payload=JSON.stringify(R);
+  const st=()=>document.getElementById("sendstate");
+  if(!ONLINE){window.__lastPayload=R;setTimeout(()=>{st()&&(st().textContent="Test mode: answers not saved.")},50);return}
+  try{localStorage.setItem("aus_pending",payload)}catch(e){}
+  for(let attempt=1;attempt<=4;attempt++){
+    if(GAS){
+      try{const j=await gasCall("saveResponse",payload);if(j&&j.ok){try{localStorage.removeItem("aus_pending")}catch(e){}st()&&(st().textContent="Your answers have been saved.");return}}catch(e){}
+      await new Promise(r=>setTimeout(r,1500*attempt));continue;
+    }
+    try{
+      const r=await fetch(CONFIG.ENDPOINT,{method:"POST",body:payload});
+      const j=await r.json().catch(()=>({ok:r.ok}));
+      if(j.ok){try{localStorage.removeItem("aus_pending")}catch(e){}st()&&(st().textContent="Your answers have been saved.");return}
+    }catch(e){
+      try{await fetch(CONFIG.ENDPOINT,{method:"POST",mode:"no-cors",body:payload});try{localStorage.removeItem("aus_pending")}catch(e){}st()&&(st().textContent="Your answers have been saved.");return}catch(e2){}
+    }
+    await new Promise(r=>setTimeout(r,1500*attempt));
+  }
+  st()&&(st().innerHTML="Your answers could not be saved because of a connection problem. Please keep this page open and reload it once you are online; your answers will be sent automatically.");
+}
+async function resendPending(){try{const p=localStorage.getItem("aus_pending");if(!p)return;
+  if(GAS){await gasCall("saveResponse",p);localStorage.removeItem("aus_pending");return}
+  if(CONFIG.ENDPOINT.startsWith("http")){await fetch(CONFIG.ENDPOINT,{method:"POST",mode:"no-cors",body:p});localStorage.removeItem("aus_pending")}}catch(e){}}
+
+/* ---------- Sequence assignment (even across participants) ---------- */
+async function assign(){
+  const forced=Number(params.get("seq"));if(TEST&&forced>=1&&forced<=4)return forced;
+  if(GAS){try{const s=await gasCall("assignSeq",PILOT);if(s>=1&&s<=4){R.assign_mode="server";return s}}catch(e){}}
+  else if(CONFIG.ENDPOINT.startsWith("http")){
+    try{const r=await fetch(CONFIG.ENDPOINT+"?action=assign&pilot="+PILOT);const j=await r.json();if(j.seq>=1&&j.seq<=4){R.assign_mode="server";return j.seq}}catch(e){}
+  }
+  R.assign_mode="random";return 1+Math.floor(Math.random()*4);
+}
+
+/* ---------- Leaving guard and no going back ---------- */
+function guard(e){e.preventDefault();e.returnValue=""}
+try{history.pushState(null,"",location.href);
+window.addEventListener("popstate",()=>{try{history.pushState(null,"",location.href)}catch(e){}});}catch(e){}
+
+/* ---------- Start ---------- */
+(async function start(){
+  await resendPending();
+  let done=false;try{done=localStorage.getItem("aus_study_done")==="1"}catch(e){}
+  if(done&&!TEST){screens=[endScreen("already")];show(0);return}
+  const seq=await assign();
+  screens=buildScreens(seq);
+  window.addEventListener("beforeunload",guard);
+  show(0);
+})();
+</script>
+</body>
+</html>
