@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sree Kamya Sunnam</title>
+<title>Sree Kamya Sunnam | Business Intelligence & Data Analytics</title>
+<meta name="description" content="Sree Kamya Sunnam: Business Intelligence and data professional in Switzerland, turning messy data into decisions across BI, supply chain and people analytics.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sreekamyasunnam.github.io/">
+<meta property="og:title" content="Sree Kamya Sunnam | Business Intelligence & Data Analytics">
+<meta property="og:description" content="Turning messy data into decisions across BI, supply chain and people analytics. Currently researching whether AI makes managers wiser, or just faster.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sree Kamya Sunnam | Business Intelligence & Data Analytics">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 
@@ -738,8 +745,8 @@ nav.scrolled {
 }
 .exp-grid {
   position:relative; z-index:2;
-  display:grid; grid-template-columns:repeat(4,1fr);
-  gap:1.2rem; width:100%; opacity:0;
+  display:grid; grid-template-columns:repeat(5,1fr);
+  gap:1.1rem; width:100%; opacity:0;
   align-self:center;
 }
 .exp-grid.vis { opacity:1; }
@@ -778,8 +785,8 @@ nav.scrolled {
 /* Grid */
 .exp-grid {
   position:relative; z-index:2;
-  display:grid; grid-template-columns:repeat(4,1fr);
-  gap:1.2rem; width:100%; opacity:0;
+  display:grid; grid-template-columns:repeat(5,1fr);
+  gap:1.1rem; width:100%; opacity:0;
 }
 .exp-grid.vis { opacity:1; }
 
@@ -843,6 +850,7 @@ nav.scrolled {
 .exp-card-wrap:nth-child(2) .exp-shimmer { animation-delay:1.1s; }
 .exp-card-wrap:nth-child(3) .exp-shimmer { animation-delay:2.2s; }
 .exp-card-wrap:nth-child(4) .exp-shimmer { animation-delay:3.3s; }
+.exp-card-wrap:nth-child(5) .exp-shimmer { animation-delay:4.4s; }
 
 /* Front text layout */
 .exp-card-front {
@@ -1006,6 +1014,7 @@ nav.scrolled {
 /* ── MOBILE ─────────────────────────── */
 @media(max-width:900px) {
   .exp-grid { grid-template-columns:repeat(2,1fr); gap:1rem; }
+  .exp-grid .exp-card-wrap:last-child:nth-child(odd) { grid-column:1 / -1; width:calc(50% - 0.5rem); justify-self:center; }
   .exp-heading-word { font-size:clamp(28px,8vw,44px); text-align:center; }
   .exp-stage { min-height:380px; }
   .exp-suitcase svg { width:130px; }
@@ -1413,10 +1422,10 @@ nav.scrolled {
 
       <!-- Story text -->
       <div class="about-story about-el" id="ae4">
-        <p><strong>Data speaks. People hesitate. I do both — and somehow make it look effortless.</strong></p>
-        <p>I'm the kind of person who walks into a room full of numbers, silence, and confused faces, and leaves with <strong>a decision, a plan, and a much better process.</strong></p>
-        <p>You see, numbers talk, but most people don't listen. <strong>I speak both fluently</strong> — translating everything that gets lost in the space between <strong>raw data and human behavior.</strong></p>
-        <p>I'm still building, still collecting, and still very much <strong>the most interesting variable</strong> in any dataset I've ever been part of. Because somewhere in that quiet space where <strong>data meets people,</strong> where strategy finally moves a room — that is exactly where I choose to live.</p>
+        <p><strong>Data speaks. People hesitate. I work in the gap between them.</strong></p>
+        <p>Give me a room full of numbers, silence and confused faces, and I'll walk out with <strong>a decision, a plan and a better process.</strong> I've done it with 50,000-row datasets, with a 300-candidate hiring pipeline, and most recently in a supply chain that had no order tracker until I built one.</p>
+        <p>Numbers talk, but most people don't listen. <strong>I speak both languages</strong>, the dashboard and the meeting room, and I translate what usually gets lost between <strong>raw data and human behaviour.</strong></p>
+        <p>Right now I'm researching a question every company is about to face: <strong>does AI make managers wiser, or just faster?</strong> And I know where I'm heading. The room where <strong>data turns into decisions.</strong> That's where I choose to live.</p>
       </div>
 
       <!-- Divider -->
@@ -1778,14 +1787,40 @@ nav.scrolled {
     </div>
     <div class="exp-mini-wrap" id="expMiniWrap"></div>
     <div class="exp-grid" id="expGrid">
-    <div class="exp-card-wrap exp-rotate-card"
+    <div class="exp-card-wrap exp-fade-card"
+         data-sx="0" data-sy="-40" data-sr="-8"
+         style="--cbf:#FFF3CC;--cbb:#FFF9E6;">
+      <div class="exp-card" id="card-soslight">
+        <div class="exp-card-front">
+          <div class="exp-shimmer"></div>
+          <div class="exp-front-content">
+            <div class="exp-card-num">01</div>
+            <div class="exp-card-company">SOS-Light<br>Sàrl</div>
+            <div class="exp-card-role">Supply Chain &amp; Operations Intern</div>
+            <div class="exp-card-meta">Nov 2026 – Present · Puidoux, Switzerland</div>
+          </div>
+          <div class="exp-flip-hint">flip ↻</div>
+        </div>
+        <div class="exp-card-back">
+          <div class="exp-border-light"></div>
+                    <div class="exp-back-inner">
+            <div class="exp-back-tag">SUPPLY CHAIN · OPERATIONS · SYSTEMS</div>
+            <div class="exp-back-role">Supply Chain &amp; Operations Intern</div>
+            <div class="exp-back-meta">Nov 2026 – Present &nbsp;·&nbsp; Puidoux, Switzerland</div>
+            <div class="exp-back-divider"></div>
+            <ul class="exp-back-bullets"><li>There was no order tracker when I arrived. So I built one in Excel, from scratch: open orders, supplier lead times, shipments and follow-ups, all in one place.</li><li>It gives back half a day of manual work. Every single day.</li><li>That time didn't disappear. It went into weekly quality checks on what our suppliers actually deliver, and a weekly look at how our freight forwarders really perform.</li><li>25+ suppliers and 10+ freight forwarders across Asia and Europe, coordinated all the way to consolidated air freight landing in Geneva.</li><li>Quotations, product records and stock run through CashCtrl (ERP). Customer orders, supplier PIs, CI, PL, AWB: every document has to match, and making sure it does is my job.</li><li>Also building product pages in WordPress and visuals in Canva. A small company doesn't need specialists. It needs people who figure things out.</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-tip-star">✦</div>
+    </div>    <div class="exp-card-wrap exp-rotate-card"
          data-sx="-300" data-sy="-15" data-sr="-18"
          style="--cbf:#EDE8F5;--cbb:#F5F2FB;">
       <div class="exp-card" id="card-srj">
         <div class="exp-card-front">
           <div class="exp-shimmer"></div>
           <div class="exp-front-content">
-            <div class="exp-card-num">01</div>
+            <div class="exp-card-num">02</div>
             <div class="exp-card-company">Swiss Riviera<br>Juniors</div>
             <div class="exp-card-role">HR &amp; Outreach</div>
             <div class="exp-card-meta">Dec 2024 – Nov 2025 · Vevey, Switzerland</div>
@@ -1811,7 +1846,7 @@ nav.scrolled {
         <div class="exp-card-front">
           <div class="exp-shimmer"></div>
           <div class="exp-front-content">
-            <div class="exp-card-num">02</div>
+            <div class="exp-card-num">03</div>
             <div class="exp-card-company">KnackTech<br>E-Learning</div>
             <div class="exp-card-role">Human Resources Intern</div>
             <div class="exp-card-meta">Sep 2024 – Dec 2024 · Remote, India</div>
@@ -1837,7 +1872,7 @@ nav.scrolled {
         <div class="exp-card-front">
           <div class="exp-shimmer"></div>
           <div class="exp-front-content">
-            <div class="exp-card-num">03</div>
+            <div class="exp-card-num">04</div>
             <div class="exp-card-company">CSR Data<br>Science School</div>
             <div class="exp-card-role">Data Analyst Intern</div>
             <div class="exp-card-meta">Oct 2023 – Mar 2024 · Hyderabad, India</div>
@@ -1863,7 +1898,7 @@ nav.scrolled {
         <div class="exp-card-front">
           <div class="exp-shimmer"></div>
           <div class="exp-front-content">
-            <div class="exp-card-num">04</div>
+            <div class="exp-card-num">05</div>
             <div class="exp-card-company">Excellerate</div>
             <div class="exp-card-role">Project Management Intern — Team Head</div>
             <div class="exp-card-meta">Aug – Sep 2023 · Remote · India / US / Europe</div>
