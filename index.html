@@ -1541,7 +1541,7 @@ nav.scrolled {
 }
 .explore-all:hover{ transform:translateY(-2px); box-shadow:0 14px 32px rgba(0,0,0,0.22); }
 .explore-all-photo{
-  width:46px; height:46px; border-radius:50%;
+  width:62px; height:62px; border-radius:50%;
   flex-shrink:0;
   background:#D4AF37;
   border:1px solid rgba(212,175,55,0.6);
@@ -1551,7 +1551,7 @@ nav.scrolled {
 .explore-all-photo img{
   width:100%; height:100%;
   object-fit:cover;
-  object-position:center 15%;
+  object-position:center 22%;
   display:block;
 }
 .explore-all-text{ display:flex; flex-direction:column; gap:3px; }
@@ -1630,8 +1630,9 @@ nav.scrolled {
   const lightboxImg = document.getElementById('photoLightboxImg');
   const photoBtn  = document.getElementById('exploreAllPhoto');
 
-  if(heroPic && allImg) allImg.src = heroPic.src;
-  if(heroPic && lightboxImg) lightboxImg.src = heroPic.src;
+  const GATE_PHOTO = 'images/contact-portrait.jpg';
+  if(allImg) allImg.src = GATE_PHOTO;
+  if(lightboxImg) lightboxImg.src = GATE_PHOTO;
 
   const managed = ['experience','projects','skills','publications','beyond'];
   const DEFAULT_NOTE = "(no rush — pick whatever you're curious about, at your own pace)";
