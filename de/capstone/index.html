@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faster, Not Wiser? | Master-Abschlussarbeit | Sree Kamya Sunnam</title>
+<meta name="description" content="Master-Abschlussarbeit: Führen KI-generierte Erkenntnisse in BI-Tools zu besseren Managemententscheidungen oder nur zu schnelleren? Ein präregistriertes Experiment von Sree Kamya Sunnam.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sreekamyasunnam.github.io/de/capstone/">
+<meta property="og:title" content="Faster, Not Wiser? KI-Erkenntnisse vs. BI-Dashboards in Entscheidungen">
+<meta property="og:description" content="Ein präregistriertes Experiment zur Frage, ob KI-generierte Erkenntnisse Führungskräfte klüger machen oder nur schneller. Master-Abschlussarbeit von Sree Kamya Sunnam.">
+<meta property="og:image" content="https://sreekamyasunnam.github.io/capstone/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500&display=swap">
+<style>
+  :root{--bg:#F2EAD8;--ink:#1E0E04;--body:#4A3520;--gold:#8B6414;--gold-soft:#B8892A;--line:#CDB98F;--card:#FAF4E6}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.6}
+  a{color:var(--gold)} a:hover{color:var(--ink)}
+  .wrap{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+  .back{display:inline-block;font-size:14px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;margin-bottom:48px}
+  .eyebrow{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:#7A5612}
+  .eyebrow::before{content:"";width:40px;height:1px;background:var(--gold)}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(44px,8vw,76px);line-height:1.05;margin:24px 0 16px}
+  h1 em{color:var(--gold)}
+  .sub{font-size:clamp(18px,2.6vw,22px);color:var(--body);max-width:680px;margin:0 0 28px}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:56px}
+  .chip{padding:6px 14px;border:1px solid var(--gold-soft);border-radius:999px;font-size:14px;color:#3A2510}
+  h2{font-family:'Playfair Display',serif;font-size:28px;margin:48px 0 12px}
+  p{margin:0 0 16px;color:var(--body);font-size:17px}
+  .cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0}
+  .case{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .case strong{display:block;font-family:'Playfair Display',serif;font-size:19px;margin-bottom:4px;color:var(--ink)}
+  .case span{font-size:15px;color:var(--body)}
+  ul{padding-left:20px;margin:0 0 16px} li{color:var(--body);font-size:17px;margin-bottom:6px}
+  .quote{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;margin:56px 0;font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(22px,3.4vw,30px);color:var(--ink)}
+  .status{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px}
+  footer{margin-top:64px;font-size:15px;color:var(--body)}
+</style>
+
+
+
+
+<!--I18N-HEAD--><link rel="alternate" hreflang="en" href="https://sreekamyasunnam.github.io/capstone/"><link rel="alternate" hreflang="de" href="https://sreekamyasunnam.github.io/de/capstone/"><link rel="alternate" hreflang="fr" href="https://sreekamyasunnam.github.io/fr/capstone/"><link rel="alternate" hreflang="it" href="https://sreekamyasunnam.github.io/it/capstone/"><link rel="alternate" hreflang="x-default" href="https://sreekamyasunnam.github.io/capstone/"><script>(function(){var C='de',P='capstone',L=null;window.__skC=C;window.__skP=P;try{L=localStorage.getItem('sk_lang')}catch(e){}
+window.__skUrl=function(l){var up=(C==='en'?'':'../')+(P==='home'?'':'../');return up+(l==='en'?'':l+'/')+(P==='home'?'index.html':'capstone/index.html')};
+if(C==='en'&&/^(de|fr|it)$/.test(L||'')){location.replace(window.__skUrl(L)+location.hash);return}
+window.__skGate=(C==='en'&&P==='home'&&!L);})();</script><!--/I18N-HEAD--><!--I18N-CSS--><style>
+.sk-lb{margin-right:auto;display:flex;align-items:center;gap:12px;font-family:'DM Sans',sans-serif;color:#4A3520;font-size:12.5px;line-height:1.25}
+.sk-lb .sk-t{display:flex;flex-direction:column}
+.sk-lb .sk-lead{letter-spacing:.02em}.sk-lb .sk-sep{font-style:normal}.sk-lb .sk-lead b{font-weight:500;color:#1E0E04}
+.sk-lb .sk-note{font-size:11px;font-style:italic;color:#7A5612;margin-top:2px}
+.sk-pills{display:flex;gap:5px}
+.sk-pill{font-size:11px;font-weight:500;letter-spacing:.08em;padding:3px 7px;border-radius:999px;border:1px solid #B8963E;color:#7A5612;text-decoration:none;cursor:none;transition:all .25s ease;background:rgba(242,234,216,.6)}
+.sk-pill:hover{background:#B8963E;color:#FFF8EC}
+.sk-pill.on{background:#1E0E04;border-color:#1E0E04;color:#F2EAD8}
+@media(max-width:768px){.sk-lb .sk-lead b,.sk-lb .sk-sep,.sk-lb .sk-note{display:none}.sk-lb{gap:8px;font-size:12px}.sk-pill{padding:3px 6px;font-size:10.5px}}
+#skGate{position:fixed;inset:0;z-index:99990;background:#F2EAD8;display:flex;align-items:center;justify-content:center;padding:24px;opacity:1;transition:opacity .6s ease;overflow:auto}
+#skGate.out{opacity:0;pointer-events:none}
+.skg-in{max-width:880px;width:100%;text-align:center;animation:skgUp .9s ease both}
+@keyframes skgUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.skg-hello{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#8B6414;margin-bottom:22px}
+.skg-h{font-family:'Playfair Display',serif;font-size:clamp(34px,5.4vw,58px);line-height:1.08;color:#1E0E04;margin:0}
+.skg-h em{display:block;font-style:italic;font-weight:400;color:#B8963E;font-size:.62em;margin-top:12px}
+.skg-sub{font-size:15px;color:#4A3520;margin:18px auto 34px;max-width:520px}
+.skg-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.skg-c{background:#FAF4E6;border:1px solid #D9C9A6;border-radius:14px;padding:22px 14px 20px;cursor:none;text-decoration:none;color:#1E0E04;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.skg-c:hover{transform:translateY(-4px);border-color:#B8963E;box-shadow:0 10px 28px rgba(122,86,18,.12)}
+.skg-code{font-size:11px;letter-spacing:.2em;color:#B8963E;font-weight:500}
+.skg-n{font-family:'Playfair Display',serif;font-size:24px;margin:6px 0 8px}
+.skg-d{font-size:13px;color:#4A3520;line-height:1.45}
+.skg-f{font-size:12.5px;color:#7A5612;margin-top:28px}
+@media(max-width:768px){.skg-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.skg-c{padding:16px 10px}.skg-n{font-size:20px}.skg-d{font-size:12px}.skg-sub{margin-bottom:24px}}
+</style><!--/I18N-CSS-->
+</head>
+<body>
+<!--I18N-BAR--><div style="position:fixed;top:14px;right:18px;z-index:50;background:rgba(242,234,216,.92);padding:6px 10px;border-radius:999px;border:1px solid #D9C9A6"><div class="sk-lb" style="margin:0" translate="no"><span class="sk-t"><span class="sk-lead"><b>Sie lesen auf Deutsch</b><i class="sk-sep"> · </i><span class="sk-q">Andere Sprache?</span></span><span class="sk-note">Übersetzte Seite · Ich arbeite auf Englisch und lerne fleissig Deutsch (A1).</span></span><span class="sk-pills"><a class="sk-pill" data-l="en" href="#" title="English" aria-label="English">EN</a><a class="sk-pill on" data-l="de" href="#" title="Deutsch" aria-label="Deutsch">DE</a><a class="sk-pill" data-l="fr" href="#" title="Français" aria-label="Français">FR</a><a class="sk-pill" data-l="it" href="#" title="Italiano" aria-label="Italiano">IT</a></span></div></div><!--/I18N-BAR-->
+
+
+
+
+<main class="wrap">
+  <a class="back" href="https://sreekamyasunnam.github.io/de/#projects">← Zurück zum Portfolio</a>
+
+  <div class="eyebrow">Master-Abschlussarbeit · MIBA Data Analytics</div>
+  <h1>Faster, <em>not wiser?</em></h1>
+  <p class="sub">KI-generierte Erkenntnisse vs. klassische BI-Dashboards in Managemententscheidungen</p>
+  <div class="meta">
+    <span class="chip">Präregistriertes Experiment (OSF)</span>
+    <span class="chip">Power BI · Generative KI</span>
+    <span class="chip">Gemischte Regressionsmodelle</span>
+    <span class="chip">Okt. 2026 – Dez. 2026</span>
+  </div>
+
+  <h2>Die Frage</h2>
+  <p>Viele Organisationen ergänzen ihre BI-Tools um KI-generierte Erkenntnisse. Entscheidungen werden dadurch eindeutig schneller. Aber werden sie auch besser? Meine Abschlussarbeit prüft, ob KI-Zusammenfassungen Führungskräften helfen, genauer zu entscheiden oder vor allem schneller, und wann Menschen der KI mehr vertrauen, als sie sollten.</p>
+
+  <h2>Das Experiment</h2>
+  <p>Masterstudierende im Business-Bereich und Berufseinsteigende versetzen sich in die Rolle einer Führungskraft und lösen vier realistische Business Cases. Jeder Fall basiert auf einem synthetischen Unternehmensdatensatz mit genau einer objektiv richtigen Antwort.</p>
+  <div class="cases">
+    <div class="case"><strong>Produktportfolio</strong><span>Entscheiden, welche Produkte Vorrang haben</span></div>
+    <div class="case"><strong>Marketingbudget</strong><span>Ein begrenztes Budget verteilen</span></div>
+    <div class="case"><strong>Kundenbindung</strong><span>Gefährdete Kunden erkennen</span></div>
+    <div class="case"><strong>Lieferantenrisiko</strong><span>Die Zuverlässigkeit von Lieferanten beurteilen</span></div>
+  </div>
+  <p>Jeder Fall wird in einem anderen Format gezeigt: als Power-BI-Dashboard, als KI-generierte Zusammenfassung oder beides zusammen. Die Studie misst Entscheidungsgenauigkeit, Tempo, Sicherheit, Selbstüberschätzung, Vertrauen und mentale Anstrengung und prüft, ob Datenkompetenz die übermässige Abhängigkeit von KI verringert.</p>
+
+  <h2>Die Grundlagen</h2>
+  <ul>
+    <li>Cognitive Fit Theory: Entscheidungen werden besser, wenn das Format zur Aufgabe passt</li>
+    <li>Automation Bias: die Neigung, einem System zu folgen, selbst wenn es falsch liegt</li>
+    <li>Algorithm Aversion und Appreciation: wann Menschen KI-Ratschläge ablehnen oder ihnen zu sehr vertrauen</li>
+  </ul>
+
+  <h2>Das Ergebnis</h2>
+  <p>A <strong>Decision-Ready BI Framework</strong> das Organisationen zeigt, wann Dashboards, KI-Zusammenfassungen oder beides sinnvoll sind, welche Schutzmechanismen helfen, KI-Fehler zu erkennen, und welche Datenkompetenz Teams brauchen, um KI-Funktionen sicher zu nutzen.</p>
+
+  <div class="quote">Jedes Unternehmen kann dieselbe KI kaufen. Der Vorteil sind Menschen, die wissen, wann sie sie hinterfragen müssen.</div>
+
+  <div class="status">
+    <p style="margin:0"><strong style="color:var(--ink)">Status:</strong> Datenerhebung läuft bis am 2. Dezember 2026, Abgabe im Dezember 2026. Betreut am American Institute of Applied Sciences in Switzerland.</p>
+  </div>
+
+  <footer>
+    Sree Kamya Sunnam · Business Intelligence &amp; Data Analytics ·
+    <a href="mailto:sunnam.sreekamya@gmail.com">sunnam.sreekamya@gmail.com</a> ·
+    <a href="https://www.linkedin.com/in/sls-sree-kamya/">LinkedIn</a>
+  </footer>
+</main>
+
+
+
+
+<!--I18N-JS--><script>(function(){
+function go(l){try{localStorage.setItem('sk_lang',l)}catch(e){}
+location.href=window.__skUrl(l)+location.hash;}
+document.querySelectorAll('.sk-pill').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();if(a.classList.contains('on'))return;go(a.dataset.l)})});
+var g=document.getElementById('skGate');
+if(g&&window.__skGate){g.style.display='flex';document.documentElement.style.overflow='hidden';
+g.querySelectorAll('.skg-c').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var l=a.dataset.l;
+if(l!=='en'){go(l);return}
+try{localStorage.setItem('sk_lang','en')}catch(x){}
+g.classList.add('out');document.documentElement.style.overflow='';setTimeout(function(){g.remove()},650);
+if(typeof playHero==='function'){['ghostTxt','heroPic','veveyCard'].forEach(function(id){var el=document.getElementById(id);el&&el.classList.remove('on')});
+document.querySelectorAll('.h-el').forEach(function(el){el.classList.remove('on')});
+var s=document.getElementById('statsBar');s&&s.classList.remove('bg-on','text-on');setTimeout(playHero,150);}
+})});}
+})();</script><!--/I18N-JS-->
+</body>
+</html>

@@ -1,0 +1,315 @@
+0|Chi sono
+1|Esperienza
+2|Progetti
+3|Pubblicazioni
+4|Competenze
+5|Oltre il lavoro
+6|Contatti
+7|↓ CV (inglese)
+10|Progettare soluzioni di dati · Collegare le persone · Creare impatto
+11|Non mi limito ad analizzare dati — io
+12|costruisco decisioni.
+13|Non mi limito a gestire team — io
+14|creo slancio.
+15|Vedi i progetti →
+16|E-mail
+19|Vevey, Svizzera 🇨🇭
+20|Dove mi trovo ora • Ora locale
+22|Leadership
+23|Articoli di ricerca
+24|Ruoli e stage
+25|Paesi
+26|CHI SONO
+27|La mia storia
+28|I dati parlano. Le persone esitano. Io lavoro nello spazio tra i due.
+29|Datemi una stanza piena di numeri, silenzio e facce perplesse, e ne uscirò con
+30|una decisione, un piano e un processo migliore.
+31|L'ho fatto con dataset da 50.000 righe, con una selezione di 300 candidati e, più di recente, in una supply chain che non aveva un sistema di tracciamento degli ordini finché non ne ho creato uno.
+32|I numeri parlano, ma la maggior parte delle persone non ascolta.
+33|Parlo entrambe le lingue
+34|, quella della dashboard e quella della sala riunioni, e traduco ciò che di solito si perde tra
+35|dati grezzi e comportamento umano.
+36|In questo momento studio una domanda che ogni azienda dovrà presto affrontare:
+37|l'IA rende i manager più saggi, o solo più veloci?
+38|E so dove sto andando: nella stanza dove
+39|i dati diventano decisioni.
+40|È lì che scelgo di stare.
+41|Nell'ultima riunione strategica sentiva che mancava qualcosa? Quel vuoto nella stanza era probabilmente
+42|un vuoto della mia forma.
+43|Ma non porto solo soluzioni —
+44|porto anche la cultura.
+45|Scorra in basso
+46|e troverà l'altro lato di quel vuoto: quello che rende i pranzi di team più rumorosi, i corridoi più divertenti e le chat di gruppo pericolosamente spassose.
+47|Non dica che non l'avevo avvisata.
+48|Costruiamo qualcosa insieme
+49|— la
+50|sezione Contatti
+51|La aspetta proprio lì. 😉
+52|C'è ancora di più da scoprire, per chi è curioso.
+53|(nessuna fretta — scelga ciò che la incuriosisce, con i suoi tempi)
+54|Certificati
+55|Lingue
+56|Oltre il lavoro
+57|Vuole il quadro completo, non solo dei pezzi?
+58|Si prenda un momento per questa — c'è tutto, in una volta sola.
+59|03 · Esperienza
+60|I ruoli che mi hanno resa chi sono.
+61|— gira la carta. scopri il lavoro. —
+64|Stagista Supply Chain & Operations
+65|nov 2026 – oggi · Puidoux, Svizzera
+66|gira ↻
+67|SUPPLY CHAIN · OPERATIONS · SISTEMI
+68|Quando sono arrivata non esisteva un sistema di tracciamento degli ordini. Così ne ho creato uno in Excel, da zero: ordini aperti, tempi di consegna dei fornitori, spedizioni e solleciti, tutto in un unico posto.
+69|Fa risparmiare mezza giornata di lavoro manuale. Ogni singolo giorno.
+70|Quel tempo non è sparito. È diventato controlli qualità settimanali su ciò che i fornitori consegnano davvero, e un'analisi settimanale di come lavorano realmente i nostri spedizionieri.
+71|Oltre 25 fornitori e oltre 10 spedizionieri tra Asia ed Europa, coordinati fino al trasporto aereo consolidato che atterra a Ginevra.
+72|Offerte, schede prodotto e magazzino passano da CashCtrl (ERP). Ordini dei clienti, fatture proforma, CI, PL, AWB: ogni documento deve corrispondere, e assicurarmene è il mio lavoro.
+73|Creo anche pagine prodotto in WordPress e grafiche in Canva. Una piccola azienda non ha bisogno di specialisti. Ha bisogno di persone che trovano soluzioni.
+76|HR & Outreach
+77|dic 2024 – nov 2025 · Vevey, Svizzera
+78|PERSONE · STRATEGIA · CRESCITA
+79|Ho costruito da zero l'intera funzione HR di una vera impresa studentesca — senza modelli, senza manuali, senza scorciatoie. Solo lavoro.
+80|Ho contattato aziende in tutta Vevey partendo da una lista che ho ricercato e costruito io stessa — entrata da sconosciuta, uscita con dei clienti.
+81|Ho redatto ogni contratto da zero. Ho inserito 10 membri in un'organizzazione gestita da studenti. Ho seguito ruolo, progressi e posizione di ogni persona — perché le organizzazioni non funzionano con le buone intenzioni, ma con i sistemi.
+82|Ho co-progettato l'intera struttura organizzativa con la responsabile HR: come scorre il lavoro, come si gestiscono le persone, dove vive la documentazione.
+83|Ho organizzato eventi nel campus diventati ricordi veri: serate di Halloween, attività rompighiaccio, campagne di reclutamento per i nuovi ed eventi di scambio culturale che hanno davvero unito le persone.
+84|Ho portato nel campus imprenditori legati all'EPFL: circa due workshop di networking al mese in cui fondatori di startup parlavano direttamente con studenti di bachelor in cerca di direzione.
+85|Non era un ruolo di supporto. Era costruire qualcosa di reale, in un'impresa reale, all'interno di una delle reti universitarie più rispettate d'Europa.
+88|Stagista Risorse Umane
+89|set 2024 – dic 2024 · Da remoto, India
+90|HR · ANALISI DEI DATI · RECRUITING
+91|Sono arrivate da 300 a 400 candidature. I posti erano 150. La soluzione non è stata il panico, ma un foglio di calcolo, un filtro, una dashboard e una settimana molto concentrata.
+92|Ho trasferito tutte le risposte di Google Forms in Sheets, costruito filtri strutturati e portato i dati utili in Power BI per la visualizzazione e in Tableau per il reporting dei KPI. Tutti i candidati preselezionati in sette giorni.
+93|Ho introdotto sistemi di monitoraggio che prima non esistevano — non perché qualcuno me lo avesse chiesto, ma perché la lacuna era evidente, e le lacune sono solo problemi che aspettano qualcuno attento.
+94|Ho gestito l'intero processo di selezione — screening, preselezione, pianificazione, comunicazione — e poi ho seguito il rendimento di ogni persona che ho contribuito ad assumere.
+95|Il monitoraggio dei KPI dopo l'assunzione ha mostrato miglioramenti misurabili dopo il mio intervento. Valutato dalla mia supervisora. Documentato. Non una sensazione — un fatto.
+96|A quanto pare, HR e analisi dei dati non sono due mondi separati. Non lo sono mai stati.
+99|Stagista Data Analyst
+100|ott 2023 – mar 2024 · Hyderabad, India
+101|DATI · DASHBOARD · CLIENTI REALI
+102|Aziende vere. Dati veri. Niente simulazioni, niente dati di esempio, niente rete di sicurezza — solo numeri reali di organizzazioni che avevano bisogno di risposte.
+103|Lavoro su dataset del personale da 20.000 a 50.000 righe: registrazioni delle ore dei project manager, dati di efficienza, metriche di consegna. Con uno sguardo alla gestione delle persone — perché la performance nasce dove le due cose si incontrano.
+104|Consegnato con il 98% di efficienza in un progetto cliente ad alto impatto. Quel numero non era un obiettivo — era il risultato di un team che ha pianificato bene ed eseguito con precisione.
+105|Ho realizzato circa l'80% delle dashboard e il 75% dei report — ogni risultato destinato al cliente, pensato per essere usato subito, non archiviato.
+106|Strumenti: Excel, Google Sheets, Power BI, Tableau, Jupyter Notebook, Anaconda Navigator. Lo strumento giusto per la domanda giusta — sempre.
+107|Questo stage mi ha insegnato a leggere un'organizzazione attraverso i suoi dati: vedere dove le persone rallentano e dove le decisioni lasciano tracce nei numeri.
+109|Stagista Project Management — Team Leader
+110|ago – set 2023 · Da remoto · India / USA / Europa
+111|LEADERSHIP · INTERCONTINENTALE · PRIMO RUOLO
+112|Primo stage. In assoluto. Nominata team leader il primo giorno. Trentacinque persone tra India, Stati Uniti ed Europa. Di solito si entra nella leadership con calma. Qui no.
+113|Arrivano i dati. L'incarico: analizzare l'efficienza dei dipendenti, l'engagement e le prestazioni dei processi — consegna entro un mese. Semplice, finché non si aggiungono tre fusi orari e trentacinque opinioni.
+114|Ho diviso il lavoro in fasi: prima la pulizia dei dati, poi l'analisi, poi la visualizzazione. Ho raccolto il contributo di ogni membro e del manager. Ho preso le decisioni. Ho tenuto il ritmo.
+115|Ho lavorato fino a tardi per coprire i fusi orari di USA ed Europa senza che si notassero le cuciture. Il team non ha mai sentito la distanza. Era proprio questo l'obiettivo — e ha funzionato.
+116|Il nostro team si è distinto da tutti gli altri del programma — con menzione, per esecuzione, coordinamento e collaborazione interculturale.
+117|Selezionata tramite candidatura competitiva su invito diretto della Saint Louis University. Prima opportunità. Piena responsabilità. Zero esitazioni.
+118|04 · Progetti
+119|Il lavoro che mi ha formata.
+120|Alcuni parlano di ciò che sanno fare. Questo è ciò che ho già fatto.
+121|Tutti
+122|Dati
+123|Ricerca
+124|Realizzati
+125|Finito di leggere? tocchi la puntina
+126|05 · Pubblicazioni
+127|Il lavoro che è stato pubblicato.
+132|Analisi del sentiment
+134|accuratezza
+135|Abstract
+136|Un sistema di raccomandazione di farmaci che prevede il sentiment delle recensioni dei pazienti con tecniche di vettorizzazione come BoW, TF-IDF, Word2Vec e analisi manuale delle caratteristiche. Sono stati applicati diversi algoritmi di classificazione per raccomandare il farmaco migliore per una data malattia. Il classificatore Linear SVC con TF-IDF ha ottenuto l'accuratezza più alta, il 93%, dimostrando il potenziale del machine learning nel controllo farmaceutico.
+137|Risultati principali
+138|Linear SVC su TF-IDF → 93% di accuratezza · Perceptron su BoW → 91% · LGBM su Word2Vec → 91% · Random Forest su caratteristiche manuali → 88%
+139|Scarica il PDF
+140|Autori: Dr. M. Ajay Kumar · Sree Kamya · K. Kiranmai · K. Ujwala · J. Neeshitha
+141|ago 2023
+146|Imaging RM
+147|Deep learning
+148|Una nuova tecnica assistita dal computer (CAD) per classificare i tumori cerebrali nei dati di risonanza magnetica. L'approccio estrae caratteristiche dalle immagini RM del cervello sfruttando l'elevata compattezza energetica della trasformata wavelet discreta (DWT). Queste caratteristiche vengono combinate con una rete neurale convoluzionale (CNN) per classificare le immagini. Il metodo supera gli approcci più diffusi con un'accuratezza complessiva del 99,3%.
+149|Accuratezza complessiva: 99,3% · Sensibilità: 97,4–98,2% · Specificità: 95,5–96,1% · Dataset: Figshare (Cheng) — 233 pazienti, 3 tipi di tumore
+150|Vedi su ResearchGate
+151|Autori: M. Ajay Kumar · Sree Kamya · K. Kiranmai · S. Pragathi
+152|set 2023
+153|JETIR · ISSN: 2349-5162 · Revisione paritaria
+159|Un sistema di rilevamento e allarme per incidenti con Arduino, ricevitore GPS e modulo GSM, per evitare che le persone restino senza soccorso dopo un incidente stradale. Il ricevitore GPS individua posizione e direzione del veicolo, mentre il modulo GSM invia un SMS con le coordinate di Google Maps al contatto designato. Il sistema rileva gli incidenti gravi tramite un sensore di vibrazione, riconosce anche i ribaltamenti e fornisce subito la posizione ai soccorsi.
+160|Rilevamento degli incidenti in tempo reale con sensore di vibrazione · Posizione GPS precisa inviata via GSM · Link di Google Maps al contatto di emergenza · Rilevamento dei ribaltamenti incluso · Efficace nelle regioni ad alta incidentalità — India, Nepal, Bangladesh
+161|06 · Competenze
+162|Gli strumenti con cui penso.
+163|Competenze · Certificazioni · Lingue — tutto in un unico posto.
+164|Dati & Analisi
+165|Business & Operations
+166|Strumenti
+167|Certificazioni
+170|giugno 2026
+171|Verifica il certificato ↗
+172|Inserisci l'e-mail:
+175|Google · Coursera · 7 corsi
+176|maggio 2026
+178|Google · Coursera · 9 corsi
+179|Analisi statistica con Excel
+181|giugno 2025
+183|7ª edizione · nov 2024
+184|nov 2024
+187|luglio 2024
+189|Business Analysis & Process Management
+193|ott 2023
+194|Certificato cartaceo disponibile su richiesta.
+195|Inglese
+196|C1 · Fluente
+197|Professionale
+198|Francese
+199|A1 · In apprendimento
+200|Lo sto studiando attivamente
+201|Hindi
+202|B1 · Conversazione
+203|Conversazione
+204|Telugu
+205|C2 · Madrelingua
+206|Madrelingua
+207|07 · Oltre il lavoro
+208|La persona dietro il curriculum.
+209|La vita fuori dai fogli di calcolo — in momenti.
+210|La vita in momenti — clicchi su un'immagine per vedere di più
+212|Svizzera
+213|Io, letteralmente tra le nuvole.
+214|Trekking
+215|Amici diventati famiglia. Montagne diventate casa.
+217|Ballare tra le nuvole — il nostro gruppo, il nostro momento.
+219|Acqua di ghiacciaio. Pura, fredda e vera.
+220|Tutto il gruppo, insieme in montagna.
+221|In vetta
+222|Ballare sulla neve, in cima al mondo.
+223|Lo scherzo
+224|Sale in una bibita fresca. Reazioni filmate. Zero rimpianti.
+225|In pausa — riprende a breve
+226|Creativa
+227|Dipingo. Disegno. Creo.
+228|Quando la vita si fa pesante, prendo un pennello. Mandala, portachiavi, fiori di argilla, matite colorate — ogni pezzo fatto solo per me. Clicchi per mettere in pausa e guardare.
+229|La musica è il mio modo di pensare.
+230|Scadenze in arrivo? Musica. Pensieri alle 2 di notte? Musica. Mi tiene con i piedi per terra mentre faccio un lavoro serio.
+231|Cucino. Mangio. Senza scuse.
+232|Il cibo è gioia. Lo cucino, lo mangio, e amo ogni secondo di entrambe le cose.
+233|Badminton. Ogni tanto.
+234|Solo quando gli amici mi trascinano. Ma ci vado — e, a dire il vero, mi diverto più di quanto ammetta.
+235|Ambiversa.
+236|Il colpo di scena
+237|Guardando tutto ciò che faccio, ci si fa subito un'idea: qualcuno sempre acceso, rumoroso, pieno di energia in ogni stanza. Poi mi conosce. Riflessiva. Attenta. Calorosa. E davvero felice in compagnia del mio silenzio. So guidare una sala
+238|e
+239|poi tornare a casa, mettere la musica e disegnare mandala in silenzio. Entrambe sono me, completamente.
+240|08 · Contatti
+241|Cerca qualcuno che
+242|porti l'esecuzione del suo team a un livello superiore?
+243|Parliamone.
+250|Luogo
+251|Vevey, Svizzera
+252|Scarica il CV (inglese)
+253|Mi scriva.
+254|Leggo ogni messaggio. Rispondo a ogni messaggio.
+255|Il suo nome
+256|La sua e-mail
+257|Oggetto
+258|Il suo messaggio
+259|Invia messaggio
+260|Messaggio inviato! Le risponderò presto.
+261|Qualcosa è andato storto. Mi scriva direttamente via e-mail.
+262|Oppure scriva direttamente →
+263|© 2026 Sree Kamya Sunnam · Costruito da zero, con intenzione.
+266|Chiudi
+267|Clicchi per mettere in pausa
+268|Opera di Sree Kamya
+270|ciao@email.com
+271|Opportunità · Collaborazione · Solo un saluto
+272|Cosa ha in mente?
+273|Questa è tutta la storia.
+274|Vuole rivedere una parte più da vicino?
+275|Vista la mia esperienza? Vuole sapere cosa ne è nato?
+276|Visto cosa ho costruito? Dietro c'è ancora di più.
+277|Queste sono le mie competenze — vuole vedere cosa ci ho fatto?
+278|Queste sono le certificazioni — vuole vedere il lavoro a cui hanno portato?
+279|Ora sa quali lingue parlo — vuole vedere cosa ho costruito?
+280|Questo è ciò che ho pubblicato — vuole conoscere il resto della mia storia?
+281|Questa sono io fuori dal lavoro — le interessa anche il lato professionale?
+282|Analisi avanzata con Python
+283|Ottimizzazione delle query SQL
+284|Progettazione di framework KPI
+285|Gestione della pipeline di talenti
+286|Gestione degli stakeholder dirigenziali
+287|Reporting di Business Intelligence
+288|Automazione dei processi con l'IA
+289|Tesi di master
+290|In corso
+291|Tesi di master — Faster, Not Wiser?
+292|Le analisi generate dall'IA rendono i manager più saggi, o solo più veloci? Lo sto misurando.
+293|La mia tesi di master esplora come le analisi generate dall'IA si confrontano con le dashboard BI tradizionali quando i manager prendono decisioni, e cosa significa per l'uso dell'IA nelle organizzazioni. La ricerca è in corso. Risultati e conclusioni saranno condivisi qui al termine dello studio.
+294|Preregistrato su OSF · Supervisionato presso l'American Institute of Applied Sciences in Switzerland · Consegna finale a dicembre 2026
+295|Ogni azienda può comprare la stessa IA. Il vantaggio sono le persone che sanno quando metterla in discussione.
+297|IA generativa
+298|Disegno sperimentale
+299|Regressione a effetti misti
+300|HR & People Analytics
+301|Completato
+302|HR & People Analytics Suite — performance, turnover e recruiting
+303|Tre dataset. Tre domande. Un obiettivo: rendere la gestione delle persone più intelligente.
+304|① Performance ed engagement dei dipendenti — guida di un team di 3–4 analisti su un dataset reale da 20.000 a 50.000 righe. Dashboard Power BI e Tableau per il cliente su performance, engagement e rischio di abbandono. Consegnato con il 98% di efficienza. ② Analisi approfondita del turnover — IBM HR Analytics Dataset (Kaggle). Modello ponderato che mostra come il 75–80% delle uscite dipenda da giovani dipendenti ad alto rendimento in cerca di crescita. Dashboard interattive per età, anzianità, reparto e stipendio. Risultati tradotti in una strategia di retention. ③ Dashboard del funnel di selezione — 300–400 candidature per 150 posizioni. Griglie di valutazione in Sheets, tutti i candidati preselezionati in 7 giorni. Funnel completo in Power BI dalla candidatura all'onboarding. Risultato chiave: la perdita maggiore avviene tra offerta e onboarding, non al colloquio.
+305|Attestati di stage disponibili. Dataset IBM pubblico su Kaggle. Dati dei clienti riservati.
+306|I dati non dicono solo cosa è successo. Dicono cosa sta per succedere — se si sa come leggerli.
+313|Ricerca IA & ML
+314|Pubblicato
+315|Ricerca IA & ML — 3 pubblicazioni con revisione paritaria
+316|Tre articoli di ricerca. Tre problemi reali risolti con il machine learning. Tutti pubblicati.
+317|① Drug Advocacy System (2022) — sistema di raccomandazione di farmaci multi-modello basato sull'analisi del sentiment di 215.063 recensioni di pazienti. Ensemble di Linear SVC (TF-IDF), Perceptron, LGBM e Random Forest. 93% di accuratezza. Pubblicato su JuniKhyat, UGC CARE Group I. ② Rilevamento di tumori cerebrali (ago 2023) — pipeline CNN + trasformata wavelet discreta (DWT) per classificare i tumori nelle immagini RM. 99,3% di accuratezza. Pubblicato sull'Industrial Engineering Journal, UGC CARE Group I. Verificato su ResearchGate. ③ Sistema di rilevamento e allarme incidenti (set 2023) — rilevamento in tempo reale con Arduino e moduli GPS e GSM per allarmi di emergenza automatici. Pubblicato su JETIR (ISSN: 2349-5162). Verificato su ResearchGate.
+318|Tutti e tre gli articoli sono pubblicati e indicizzati. Link a ResearchGate disponibili.
+319|La ricerca non consiste nell'avere ragione. Consiste nell'essere rigorosi — finché i dati non lasciano spazio a dubbi.
+322|Machine learning
+323|Performance Intelligence
+324|Data & Performance Intelligence — cosa distingue chi rende di più da tutti gli altri
+325|La performance non è fortuna. È uno schema misurabile e ripetibile — e questo studio l'ha trovato.
+326|Ho combinato l'Employee Performance Dataset di Kaggle con osservazioni reali in azienda. Analisi multivariata di ore di formazione e punteggi di performance, del legame tra valutazione del manager e risultati del team, di anzianità e performance, e dell'istruzione come fattore predittivo. Risultato chiave: i dipendenti più performanti condividono tre caratteristiche — un investimento strutturato nella formazione, manager molto coinvolti e un ingresso con una chiara intenzione di crescere. Lo sviluppo mirato batte sempre la semplice esperienza. Dashboard Power BI avanzate con DAX e analisi statistiche in Python (matrici di correlazione, modelli di regressione). Risultati tradotti in un Performance Blueprint concreto — un framework pratico per individuare, sviluppare e trattenere i migliori talenti.
+327|Dataset pubblico su Kaggle. Analisi completa, codice Python e dashboard Power BI disponibili su richiesta.
+328|Ogni organizzazione ha un divario di performance che non vede. Questo studio l'ha trovato — e ha mostrato esattamente dove guardare.
+329|Excel avanzato
+330|Modellazione statistica
+331|Presenza digitale
+333|Presenza digitale — due prodotti costruiti da zero, senza modelli
+334|Per distinguersi online, niente modelli. Si costruisce da sé.
+335|① Clone di Netflix India — riproduzione fedele al pixel della homepage di Netflix India in puro HTML5 e CSS3. Hero a schermo intero, navigazione responsive, invito all'azione via e-mail, layout Flexbox in quattro sezioni, FAQ a fisarmonica solo in CSS senza JavaScript, footer completo su più colonne. Completamente ottimizzato per mobile. ② Questo portfolio — scia di farfalle personalizzata per il cursore, filigrane fantasma, animazioni di testo sfalsate, ora locale in tempo reale, carte che passano dal disordine alla griglia, carte che si girano con effetto mosaico, effetti luccicanti. Esperienza con carte che girano in 3D. Cronologia delle pubblicazioni animata. Competenze con animazione macchina da scrivere. Certificazioni espandibili con immagini reali dei certificati. Online su sreekamyasunnam.github.io.
+336|Portfolio online su sreekamyasunnam.github.io. File sorgente del clone di Netflix disponibili su richiesta.
+337|Non volevo una presenza digitale uguale a quella di tutti gli altri. Così ne ho costruite due che mi somigliano.
+342|Animazioni CSS
+343|Incorporamento Base64
+344|Design responsive
+346|← Torna al portfolio
+347|Tesi di master · MIBA Data Analytics
+350|Analisi generate dall'IA vs dashboard BI tradizionali nelle decisioni manageriali
+351|Esperimento preregistrato (OSF)
+352|Power BI · IA generativa
+353|Regressione a effetti misti
+354|ott 2026 – dic 2026
+355|La domanda
+356|Molte organizzazioni stanno aggiungendo analisi generate dall'IA ai loro strumenti di BI. Le decisioni diventano chiaramente più rapide. Ma diventano anche migliori? La mia tesi verifica se i riassunti IA aiutano i manager a decidere in modo più accurato, o soprattutto più veloce, e quando le persone si fidano dell'IA più del dovuto.
+357|L'esperimento
+358|Studenti di master in economia e giovani professionisti si mettono nei panni di un manager e risolvono quattro casi aziendali realistici. Ogni caso si basa su un dataset aziendale sintetico con una sola risposta oggettivamente corretta.
+359|Portafoglio prodotti
+360|Decidere a quali prodotti dare priorità
+361|Budget di marketing
+362|Distribuire un budget limitato
+363|Fidelizzazione dei clienti
+364|Individuare i clienti a rischio
+365|Rischio fornitori
+366|Valutare l'affidabilità dei fornitori
+367|Ogni caso viene mostrato in un formato diverso: dashboard Power BI, riassunto generato dall'IA, oppure entrambi insieme. Lo studio misura accuratezza delle decisioni, velocità, sicurezza, eccesso di sicurezza, fiducia e sforzo mentale, e verifica se l'alfabetizzazione dei dati riduce l'eccessiva dipendenza dall'IA.
+368|Le basi
+369|Cognitive Fit Theory: le decisioni migliorano quando il formato corrisponde al compito
+370|Automation bias: la tendenza a seguire un sistema anche quando sbaglia
+371|Avversione e apprezzamento per gli algoritmi: quando le persone rifiutano i consigli dell'IA o se ne fidano troppo
+372|Il risultato
+373|Decision-Ready BI Framework
+374|che indica alle organizzazioni quando usare dashboard, riassunti IA o entrambi, quali tutele aiutano a individuare gli errori dell'IA e di quale alfabetizzazione dei dati hanno bisogno i team per usare l'IA in sicurezza.
+375|Stato:
+376|raccolta dati in corso fino al 2 dicembre 2026, consegna finale a dicembre 2026. Supervisionato presso l'American Institute of Applied Sciences in Switzerland.
+378|Sree Kamya Sunnam | Business Intelligence & Data Analytics
+379|Sree Kamya Sunnam: professionista di Business Intelligence e dati in Svizzera, che trasforma dati disordinati in decisioni — BI, supply chain e people analytics.
+380|Trasformare dati disordinati in decisioni — BI, supply chain e people analytics. Ora studio se l'IA rende i manager più saggi, o solo più veloci.
+381|Faster, Not Wiser? | Tesi di master | Sree Kamya Sunnam
+382|Tesi di master: le analisi generate dall'IA negli strumenti di BI portano a decisioni manageriali migliori, o solo più rapide? Un esperimento preregistrato di Sree Kamya Sunnam.
+383|Un esperimento preregistrato sulla domanda se le analisi generate dall'IA rendano i manager più saggi, o solo più veloci. Tesi di master di Sree Kamya Sunnam.
+384|Francese · Tedesco
+385|Faster, Not Wiser? Analisi IA vs dashboard BI nelle decisioni

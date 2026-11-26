@@ -1,0 +1,316 @@
+0|Über mich
+1|Erfahrung
+2|Projekte
+3|Publikationen
+4|Kompetenzen
+5|Jenseits der Arbeit
+6|Kontakt
+7|↓ Lebenslauf (EN)
+10|Datenlösungen gestalten · Menschen verbinden · Wirkung erzielen
+11|Ich analysiere nicht nur Daten – ich
+12|gestalte Entscheidungen.
+13|Ich führe nicht nur Teams – ich
+14|bringe sie in Bewegung.
+15|Projekte ansehen →
+16|E-Mail
+19|Vevey, Schweiz 🇨🇭
+20|Aktueller Standort • Ortszeit
+21|Teamleitung
+22|Führung
+23|Forschungsarbeiten
+24|Stellen & Praktika
+25|Länder
+26|ÜBER MICH
+27|Meine Geschichte
+28|Daten sprechen. Menschen zögern. Ich arbeite genau dazwischen.
+29|Geben Sie mir einen Raum voller Zahlen, Schweigen und ratloser Gesichter, und ich verlasse ihn mit
+30|einer Entscheidung, einem Plan und einem besseren Prozess.
+31|Das habe ich mit Datensätzen von 50'000 Zeilen geschafft, mit einer Rekrutierungspipeline von 300 Kandidierenden und zuletzt in einer Lieferkette, die keinen Auftrags-Tracker hatte, bis ich einen gebaut habe.
+32|Zahlen reden, aber die meisten Menschen hören nicht zu.
+33|Ich spreche beide Sprachen
+34|, die des Dashboards und die des Sitzungszimmers, und ich übersetze, was meist verloren geht zwischen
+35|Rohdaten und menschlichem Verhalten.
+36|Gerade erforsche ich eine Frage, die bald jedes Unternehmen beschäftigen wird:
+37|Macht KI Führungskräfte klüger oder nur schneller?
+38|Und ich weiss, wohin ich will: in den Raum, in dem
+39|aus Daten Entscheidungen werden.
+40|Dort will ich sein.
+41|Hat in Ihrem letzten Strategiemeeting etwas gefehlt? Diese leere Energie im Raum war wahrscheinlich
+42|eine Lücke in meiner Form.
+43|Aber ich bringe nicht nur Lösungen –
+44|ich bringe Kultur mit.
+45|Scrollen Sie weiter
+46|und Sie entdecken die andere Seite dieser Lücke: die, die Teamessen lauter, Bürogänge lustiger und Gruppenchats gefährlich unterhaltsam macht.
+47|Sagen Sie nicht, ich hätte Sie nicht gewarnt.
+48|Lassen Sie uns gemeinsam etwas aufbauen
+49|– der
+50|Kontaktbereich
+51|wartet schon auf Sie. 😉
+52|Es gibt noch mehr zu entdecken, für alle, die neugierig sind.
+53|(keine Eile – wählen Sie einfach, was Sie interessiert, in Ihrem Tempo)
+54|Zertifikate
+55|Sprachen
+56|Jenseits der Arbeit
+57|Lieber das ganze Bild statt einzelner Teile?
+58|Nehmen Sie sich einen Moment Zeit – hier ist alles auf einmal.
+59|03 · Erfahrung
+60|Die Stationen, die mich geprägt haben.
+61|– Karte umdrehen. Die Arbeit kennenlernen. –
+64|Praktikantin Supply Chain & Operations
+65|Nov. 2026 – heute · Puidoux, Schweiz
+66|umdrehen ↻
+67|SUPPLY CHAIN · OPERATIONS · SYSTEME
+68|Als ich ankam, gab es keinen Auftrags-Tracker. Also habe ich einen in Excel gebaut, von Grund auf: offene Bestellungen, Lieferzeiten, Sendungen und Nachfassaktionen an einem Ort.
+69|Er spart einen halben Tag manuelle Arbeit. Jeden einzelnen Tag.
+70|Diese Zeit ist nicht verschwunden. Sie fliesst in wöchentliche Qualitätskontrollen dessen, was unsere Lieferanten tatsächlich liefern, und in einen wöchentlichen Blick darauf, wie gut unsere Spediteure wirklich arbeiten.
+71|Über 25 Lieferanten und über 10 Spediteure in Asien und Europa, koordiniert bis zur konsolidierten Luftfracht, die in Genf landet.
+72|Offerten, Produktdaten und Lagerbestand laufen über CashCtrl (ERP). Kundenaufträge, Proforma-Rechnungen, CI, PL, AWB: Jedes Dokument muss übereinstimmen, und dafür zu sorgen ist meine Aufgabe.
+73|Zudem erstelle ich Produktseiten in WordPress und Visuals in Canva. Ein kleines Unternehmen braucht keine Spezialisten. Es braucht Menschen, die Lösungen finden.
+76|HR & Outreach
+77|Dez. 2024 – Nov. 2025 · Vevey, Schweiz
+78|MENSCHEN · STRATEGIE · WACHSTUM
+79|Die gesamte HR-Funktion eines echten Studierendenunternehmens von null aufgebaut – ohne Vorlage, ohne Handbuch, ohne Abkürzungen. Nur Arbeit.
+80|Unternehmen in ganz Vevey kaltakquiriert, anhand einer selbst recherchierten und aufgebauten Liste – als Fremde hereingekommen, mit Kunden hinausgegangen.
+81|Jeden Arbeitsvertrag von Grund auf gestaltet. 10 Mitglieder in einer studentisch geführten Organisation eingearbeitet. Rolle, Fortschritt und Position jeder Person nachverfolgt – denn Organisationen laufen nicht mit guten Absichten, sondern mit Systemen.
+82|Gemeinsam mit der HR-Leitung die gesamte Organisationsstruktur entworfen: wie Arbeit fliesst, wie Menschen geführt werden, wo Dokumentation lebt.
+83|Campus-Events organisiert, die zu echten Erinnerungen wurden: Halloween-Abende, Kennenlern-Events, Rekrutierungsaktionen für Neue und Kulturaustausch-Anlässe, die Menschen wirklich zusammengebracht haben.
+84|EPFL-nahe Unternehmerinnen und Unternehmer auf den Campus geholt: rund zwei Networking-Workshops pro Monat, in denen Startup-Gründer direkt mit Bachelorstudierenden sprachen.
+85|Das war keine Unterstützungsrolle. Hier ist etwas Echtes entstanden, in einem echten Unternehmen, innerhalb eines der angesehensten Hochschulnetzwerke Europas.
+88|Praktikantin Human Resources
+89|Sept. 2024 – Dez. 2024 · Remote, Indien
+90|HR · DATENANALYSE · REKRUTIERUNG
+91|300 bis 400 Bewerbungen kamen herein. Es gab 150 Plätze. Die Lösung war keine Panik, sondern eine Tabelle, ein Filter, ein Dashboard und eine sehr fokussierte Woche.
+92|Alle Google-Form-Antworten in Sheets übertragen, strukturierte Filter gebaut, relevante Daten zur Visualisierung in Power BI und für KPI-Reporting in Tableau überführt. Alle Kandidierenden in sieben Tagen vorselektiert.
+93|Tracking-Systeme eingeführt, die es vorher nicht gab – nicht weil jemand danach gefragt hat, sondern weil die Lücke offensichtlich war. Und Lücken sind nur Probleme, die darauf warten, dass jemand hinschaut.
+94|Den gesamten Rekrutierungsprozess verantwortet – Screening, Vorauswahl, Terminplanung, Kommunikation – und danach die Leistung aller Personen verfolgt, die ich mit eingestellt habe.
+95|Das KPI-Tracking nach der Einstellung zeigte messbare Verbesserungen nach meinem Einsatz. Von der Vorgesetzten bewertet. Dokumentiert. Kein Gefühl, sondern eine Tatsache.
+96|Wie sich zeigt, sind HR und Datenanalyse keine getrennten Welten. Waren sie nie.
+99|Praktikantin Datenanalyse
+100|Okt. 2023 – März 2024 · Hyderabad, Indien
+101|DATEN · DASHBOARDS · ECHTE KUNDEN
+102|Echte Unternehmen. Echte Datensätze. Keine Simulationen, keine Beispieldaten, kein Sicherheitsnetz – nur Live-Zahlen von Organisationen, die Antworten brauchten.
+103|Arbeit mit Mitarbeiterdatensätzen von 20'000–50'000 Zeilen: Zeiterfassungen von Projektleitenden, Effizienzdaten, Liefermetriken. Mit Blick auf Personalführung – denn Leistung entsteht dort, wo sich beides trifft.
+104|Mit 98 % Effizienz in einem anspruchsvollen Kundenprojekt geliefert. Diese Zahl war kein Ziel, sondern das Ergebnis eines Teams, das sauber geplant und präzise umgesetzt hat.
+105|Rund 80 % aller Dashboards und 75 % aller Berichte erstellt – jedes Ergebnis kundenorientiert und dafür gemacht, sofort genutzt zu werden, nicht abgelegt.
+106|Tools: Excel, Google Sheets, Power BI, Tableau, Jupyter Notebook, Anaconda Navigator. Das richtige Werkzeug für die richtige Frage – immer.
+107|Dieses Praktikum hat mir beigebracht, eine Organisation über ihre Daten zu lesen: zu sehen, wo Menschen langsamer werden und wo Entscheidungen Spuren in den Zahlen hinterlassen.
+109|Praktikantin Projektmanagement – Teamleiterin
+110|Aug. – Sept. 2023 · Remote · Indien / USA / Europa
+111|FÜHRUNG · INTERKONTINENTAL · ERSTE STELLE
+112|Erstes Praktikum. Überhaupt. Am ersten Tag zur Teamleiterin ernannt. 35 Personen aus Indien, den USA und Europa. Die meisten wachsen langsam in Führung hinein. Hier war das anders.
+113|Der Datensatz kam. Der Auftrag: Mitarbeitereffizienz, Engagement-Muster und Workflow-Leistung analysieren – Abgabe in einem Monat. Einfach genug, bis man drei Zeitzonen und 35 Meinungen einrechnet.
+114|Die Arbeit in Phasen aufgeteilt: zuerst Datenbereinigung, dann Analyse, dann Visualisierung. Input von jedem Teammitglied und vom Manager eingeholt. Entscheidungen getroffen. Den Zeitplan im Griff behalten.
+115|Bis spät in die Nacht gearbeitet, um die Zeitzonen der USA und Europas abzudecken, ohne dass man die Nähte sah. Das Team hat die Distanz nie gespürt. Genau darum ging es – und es hat funktioniert.
+116|Unser Team hat sich von allen anderen im Programm abgehoben – mit Auszeichnung, in Umsetzung, Koordination und interkultureller Zusammenarbeit.
+117|Ausgewählt in einem kompetitiven Bewerbungsverfahren auf direkte Einladung der Saint Louis University. Erste Chance. Volle Verantwortung. Kein Zögern.
+118|04 · Projekte
+119|Die Arbeit, die mich geprägt hat.
+120|Manche erzählen, was sie können. Hier ist, was ich bereits gemacht habe.
+121|Alle
+122|Daten
+123|Forschung
+124|Gebaut
+125|Fertig gelesen? Tippen Sie auf die Nadel
+126|05 · Publikationen
+127|Die Arbeit, die veröffentlicht wurde.
+132|Sentimentanalyse
+134|Genauigkeit
+135|Abstract
+136|Ein Empfehlungssystem für Medikamente, das die Stimmung in Patientenbewertungen vorhersagt, mithilfe von Vektorisierungsverfahren wie BoW, TF-IDF, Word2Vec und manueller Merkmalsanalyse. Mehrere Klassifikationsalgorithmen wurden eingesetzt, um für eine bestimmte Krankheit das beste Medikament zu empfehlen. Der Linear-SVC-Klassifikator mit TF-IDF erreichte die höchste Genauigkeit von 93 % und zeigt, was maschinelles Lernen in der pharmazeutischen Prüfung leisten kann.
+137|Wichtigste Ergebnisse
+138|Linear SVC mit TF-IDF → 93 % Genauigkeit · Perceptron mit BoW → 91 % · LGBM mit Word2Vec → 91 % · Random Forest mit manuellen Merkmalen → 88 %
+139|PDF herunterladen
+140|Autoren: Dr. M. Ajay Kumar · Sree Kamya · K. Kiranmai · K. Ujwala · J. Neeshitha
+141|Aug. 2023
+146|MRT-Bildgebung
+147|Deep Learning
+148|Ein neues computergestütztes Verfahren (CAD) zur Klassifikation von Hirntumoren in MRT-Daten. Der Ansatz gewinnt Merkmale aus MRT-Bildern des Gehirns, indem er die starke Energiekompaktheit der diskreten Wavelet-Transformation (DWT) nutzt. Diese Wavelet-Merkmale werden mit einem Convolutional Neural Network (CNN) kombiniert, um die MRT-Bilder zu klassifizieren. Das Verfahren übertrifft gängige Methoden mit einer Gesamtgenauigkeit von 99,3 %.
+149|Gesamtgenauigkeit: 99,3 % · Sensitivität: 97,4–98,2 % · Spezifität: 95,5–96,1 % · Datensatz: Figshare (Cheng) – 233 Patienten, 3 Tumorarten
+150|Auf ResearchGate ansehen
+151|Autoren: M. Ajay Kumar · Sree Kamya · K. Kiranmai · S. Pragathi
+152|Sept. 2023
+153|JETIR · ISSN: 2349-5162 · Peer-Review
+159|Ein Unfallerkennungs- und Alarmsystem mit Arduino, GPS-Empfänger und GSM-Modul, das verhindern soll, dass Menschen nach einem Verkehrsunfall ohne Hilfe bleiben. Der GPS-Empfänger bestimmt Standort und Richtung des Fahrzeugs, das GSM-Modul sendet eine SMS mit Google-Maps-Koordinaten an den hinterlegten Kontakt. Das System erkennt schwere Unfälle über einen Vibrationssensor, erkennt auch Überschläge und liefert Rettungsdiensten sofort den Standort.
+160|Unfallerkennung in Echtzeit per Vibrationssensor · Genauer GPS-Standort per GSM übermittelt · Google-Maps-Link an den Notfallkontakt · Überschlagserkennung inklusive · Wirksam in Regionen mit vielen Unfällen – Indien, Nepal, Bangladesch
+161|06 · Kompetenzen
+162|Die Werkzeuge, mit denen ich denke.
+163|Kompetenzen · Zertifikate · Sprachen – alles an einem Ort.
+164|Daten & Analytik
+165|Business & Operations
+167|Zertifikate
+170|Juni 2026
+171|Zertifikat prüfen ↗
+172|E-Mail eingeben:
+175|Google · Coursera · 7 Kurse
+176|Mai 2026
+178|Google · Coursera · 9 Kurse
+179|Statistische Analyse mit Excel
+181|Juni 2025
+183|7. Ausgabe · Nov. 2024
+184|Nov. 2024
+187|Juli 2024
+189|Business-Analyse & Prozessmanagement
+193|Okt. 2023
+194|Physisches Zertifikat auf Anfrage erhältlich.
+195|Englisch
+196|C1 · Fliessend
+197|Beruflich
+198|Französisch
+199|A1 · Am Lernen
+200|Lerne aktiv
+201|Hindi
+202|B1 · Konversation
+203|Konversation
+204|Telugu
+205|C2 · Muttersprache
+206|Muttersprache
+207|07 · Jenseits der Arbeit
+208|Der Mensch hinter dem Lebenslauf.
+209|Das Leben ausserhalb der Tabellen – in Momenten.
+210|Das Leben in Momenten – klicken Sie auf ein Bild für mehr
+212|Schweiz
+213|Ich, buchstäblich über den Wolken.
+214|Wandern
+215|Freunde, die Familie wurden. Berge, die ein Zuhause wurden.
+217|Tanzen in den Wolken – unsere Gruppe, unser Moment.
+219|Gletscherwasser. Rein, kalt und echt.
+220|Die ganze Gruppe, gemeinsam in den Bergen.
+221|Gipfel
+222|Tanzen im Schnee, ganz oben auf der Welt.
+223|Der Streich
+224|Salz im kalten Getränk. Reaktionen gefilmt. Null Reue.
+225|Pausiert – geht gleich weiter
+226|Kreativ
+227|Ich male. Ich zeichne. Ich gestalte.
+228|Wenn das Leben schwer wird, greife ich zum Pinsel. Mandalas, Schlüsselanhänger, Tonblumen, Farbstiftzeichnungen – jedes Stück nur für mich gemacht. Zum Anhalten klicken und ansehen.
+229|Musik ist meine Art zu denken.
+230|Termindruck? Musik an. Grübeln um 2 Uhr nachts? Musik an. Sie hält mich bei ernsthafter Arbeit auf dem Boden.
+231|Ich koche. Ich esse. Ohne Entschuldigung.
+232|Essen ist Freude. Ich koche es, ich esse es, und ich liebe jede Sekunde von beidem.
+233|Badminton. Ab und zu.
+234|Nur wenn Freunde mich mitschleppen. Aber ich komme – und ehrlich gesagt macht es mir mehr Spass, als ich zugebe.
+235|Ambivertiert.
+236|Die überraschende Wendung
+237|Wenn Sie sehen, was ich alles mache, entsteht schnell ein Bild: jemand, der immer an ist, laut, in jedem Raum voller Energie. Und dann lernen Sie mich kennen. Nachdenklich. Aufmerksam. Herzlich. Und wirklich glücklich in meiner eigenen ruhigen Gesellschaft. Ich kann einen Raum führen
+238|und
+239|danach nach Hause gehen, Musik anmachen und in Stille Mandalas zeichnen. Beides bin ganz und gar ich.
+240|08 · Kontakt
+241|Suchen Sie jemanden, der
+242|die Umsetzung Ihres Teams auf ein neues Niveau hebt?
+243|Lassen Sie uns reden.
+250|Standort
+251|Vevey, Schweiz
+252|Lebenslauf herunterladen (Englisch)
+253|Schreiben Sie mir.
+254|Ich lese jede Nachricht. Ich beantworte jede Nachricht.
+255|Ihr Name
+256|Ihre E-Mail
+257|Betreff
+258|Ihre Nachricht
+259|Nachricht senden
+260|Nachricht gesendet! Ich melde mich bald.
+261|Etwas ist schiefgelaufen. Bitte schreiben Sie mir direkt per E-Mail.
+262|Oder direkt per E-Mail →
+263|© 2026 Sree Kamya Sunnam · Mit Absicht von Grund auf gebaut.
+266|Schliessen
+267|Zum Anhalten klicken
+268|Kunstwerk von Sree Kamya
+270|hallo@email.com
+271|Jobangebot · Zusammenarbeit · Einfach Hallo sagen
+272|Was beschäftigt Sie?
+273|Das ist die ganze Geschichte.
+274|Möchten Sie einen Teil noch einmal genauer ansehen?
+275|Erfahrung gesehen? Neugierig, was daraus entstanden ist?
+276|Gesehen, was ich gebaut habe? Dahinter steckt noch mehr.
+277|Das sind meine Kompetenzen – neugierig, was ich damit gemacht habe?
+278|Das sind die Zertifikate – möchten Sie die Arbeit sehen, zu der sie geführt haben?
+279|Jetzt wissen Sie, welche Sprachen ich spreche – möchten Sie sehen, was ich gebaut habe?
+280|Das habe ich veröffentlicht – neugierig auf den Rest meiner Geschichte?
+281|Das bin ich ausserhalb der Arbeit – neugierig auf die berufliche Seite?
+282|Fortgeschrittene Analytik mit Python
+283|SQL-Abfrageoptimierung
+284|Entwicklung von KPI-Frameworks
+285|Talent-Pipeline-Management
+286|Management von Führungs-Stakeholdern
+287|Business-Intelligence-Reporting
+288|KI-gestützte Workflow-Automatisierung
+289|Master-Abschlussarbeit
+290|In Arbeit
+291|Master-Abschlussarbeit – Faster, Not Wiser?
+292|Machen KI-generierte Erkenntnisse Führungskräfte klüger oder nur schneller? Ich messe es.
+293|Meine Masterarbeit untersucht, wie KI-generierte Erkenntnisse im Vergleich zu klassischen BI-Dashboards abschneiden, wenn Führungskräfte Entscheidungen treffen, und was das für den Einsatz von KI in Organisationen bedeutet. Die Forschung läuft noch. Ergebnisse und Schlussfolgerungen folgen hier, sobald die Studie abgeschlossen ist.
+294|Präregistriert auf OSF · Betreut am American Institute of Applied Sciences in Switzerland · Abgabe Dezember 2026
+295|Jedes Unternehmen kann dieselbe KI kaufen. Der Vorteil sind Menschen, die wissen, wann sie sie hinterfragen müssen.
+297|Generative KI
+298|Experimentelles Design
+299|Gemischte Regressionsmodelle
+300|HR & People Analytics
+301|Abgeschlossen
+302|HR & People Analytics Suite – Leistung, Fluktuation & Rekrutierung
+303|Drei Datensätze. Drei Fragen. Ein Ziel: Personalarbeit klüger machen.
+304|① Mitarbeiterleistung & Engagement – Leitung eines Teams von 3–4 Analysten an einem Live-Datensatz mit 20'000–50'000 Zeilen. Kundenorientierte Power-BI- und Tableau-Dashboards zu Leistung, Engagement und Fluktuationsrisiko. Mit 98 % Effizienz geliefert. ② HR-Fluktuationsanalyse – IBM HR Analytics Dataset (Kaggle). Gewichtetes Modell, das zeigt: 75–80 % der Fluktuation gehen auf leistungsstarke jüngere Mitarbeitende zurück, die Wachstum suchen. Interaktive Dashboards nach Alter, Betriebszugehörigkeit, Abteilung und Lohn. Ergebnisse in ein strategisches Bindungskonzept übersetzt. ③ Rekrutierungs-Funnel-Dashboard – 300–400 Bewerbungen für 150 Stellen. Bewertungsraster in Sheets, alle Kandidierenden in 7 Tagen vorselektiert. Vollständiger Power-BI-Funnel von der Bewerbung bis zum Onboarding. Wichtigste Erkenntnis: Der grösste Abfall liegt zwischen Angebot und Onboarding, nicht beim Interview.
+305|Praktikumszeugnisse vorhanden. IBM-Datensatz öffentlich auf Kaggle. Kundendaten vertraulich.
+306|Daten zeigen nicht nur, was passiert ist. Sie zeigen, was gleich passiert – wenn man sie zu lesen weiss.
+313|KI- & ML-Forschung
+314|Veröffentlicht
+315|KI- & ML-Forschung – 3 begutachtete Publikationen
+316|Drei Forschungsarbeiten. Drei echte Probleme, gelöst mit maschinellem Lernen. Alle veröffentlicht.
+317|① Drug Advocacy System (2022) – Empfehlungssystem für Medikamente mit mehreren Modellen und Sentimentanalyse von 215'063 Patientenbewertungen. Ensemble aus Linear SVC (TF-IDF), Perceptron, LGBM und Random Forest. 93 % Empfehlungsgenauigkeit. Veröffentlicht in JuniKhyat, UGC CARE Group I. ② Hirntumor-Erkennung (Aug. 2023) – Pipeline aus CNN und diskreter Wavelet-Transformation (DWT) zur Klassifikation von Hirntumoren in MRT-Bildern. 99,3 % Erkennungsgenauigkeit. Veröffentlicht im Industrial Engineering Journal, UGC CARE Group I. Auf ResearchGate verifiziert. ③ Unfallerkennungs- & Alarmsystem (Sept. 2023) – Unfallerkennung in Echtzeit mit Arduino, GPS- und GSM-Modulen für automatische Notfallalarme. Veröffentlicht in JETIR (ISSN: 2349-5162). Auf ResearchGate verifiziert.
+318|Alle drei Arbeiten veröffentlicht und indexiert. ResearchGate-Links vorhanden.
+319|Bei Forschung geht es nicht darum, recht zu haben. Es geht um Gründlichkeit – bis die Daten keinen Zweifel mehr lassen.
+322|Maschinelles Lernen
+323|Performance Intelligence
+324|Daten & Performance Intelligence – was Top-Performer vom Rest unterscheidet
+325|Leistung ist kein Glück. Sie ist ein messbares, wiederholbares Muster – und diese Studie hat es gefunden.
+326|Kaggles Employee Performance Dataset kombiniert mit echten Beobachtungen aus Organisationen. Multivariate Analyse von Schulungsstunden und Leistungswerten, Zusammenhang zwischen Vorgesetztenbewertung und Teamleistung, Betriebszugehörigkeit und Leistung sowie Bildung als Prädiktor. Kernergebnis: Die leistungsstärksten Mitarbeitenden teilen drei Merkmale – strukturierte Weiterbildung, stark engagierte Vorgesetzte und ein Einstieg mit klarer Entwicklungsabsicht. Gezielte Entwicklung schlägt reine Erfahrung jedes Mal. Fortgeschrittene Power-BI-Dashboards mit DAX und statistische Analysen in Python (Korrelationsmatrizen, Regressionsmodelle). Ergebnisse in einen umsetzbaren Performance Blueprint übersetzt – ein praktisches Framework, um Top-Performer zu erkennen, zu fördern und zu halten.
+327|Datensatz öffentlich auf Kaggle. Vollständige Analyse, Python-Code und Power-BI-Dashboards auf Anfrage.
+328|Jede Organisation hat eine Leistungslücke, die sie nicht sieht. Diese Studie hat sie gefunden – und genau gezeigt, wo man hinschauen muss.
+329|Excel für Fortgeschrittene
+330|Statistische Modellierung
+331|Digitaler Auftritt
+333|Digitaler Auftritt – zwei Produkte von Grund auf gebaut, ohne Vorlagen
+334|Wer digital herausstechen will, nimmt keine Vorlage. Sondern baut selbst.
+335|① Netflix-India-Klon – pixelgenauer Nachbau der Netflix-India-Startseite mit reinem HTML5 und CSS3. Vollbild-Hero, responsive Navigation, E-Mail-CTA, Flexbox-Layout mit vier Bereichen, FAQ-Akkordeon nur mit CSS ohne JavaScript, vollständiger mehrspaltiger Footer. Vollständig für Mobilgeräte optimiert. ② Dieses Portfolio – eigene Schmetterlings-Cursorspur, Ghost-Wasserzeichen, gestaffelte Textanimationen, Live-Ortszeit, Karten, die sich von verstreut zu Raster ordnen, Kartenwende mit Mosaik-Effekt, Schimmer-Effekte. Erfahrung mit 3D-Kartenwende. Publikations-Zeitleiste mit sequenzieller Animation. Kompetenzen mit Schreibmaschinen-Animation. Zertifikate zum Aufklappen mit echten Zertifikatsbildern. Live auf sreekamyasunnam.github.io.
+336|Portfolio live auf sreekamyasunnam.github.io. Quelldateien des Netflix-Klons auf Anfrage.
+337|Ich wollte keinen digitalen Auftritt, der aussieht wie alle anderen. Also habe ich zwei gebaut, die aussehen wie ich.
+341|Intersection Observer API
+342|CSS-Animationen
+343|Base64-Einbettung
+344|Responsive Design
+346|← Zurück zum Portfolio
+347|Master-Abschlussarbeit · MIBA Data Analytics
+350|KI-generierte Erkenntnisse vs. klassische BI-Dashboards in Managemententscheidungen
+351|Präregistriertes Experiment (OSF)
+352|Power BI · Generative KI
+353|Gemischte Regressionsmodelle
+354|Okt. 2026 – Dez. 2026
+355|Die Frage
+356|Viele Organisationen ergänzen ihre BI-Tools um KI-generierte Erkenntnisse. Entscheidungen werden dadurch eindeutig schneller. Aber werden sie auch besser? Meine Abschlussarbeit prüft, ob KI-Zusammenfassungen Führungskräften helfen, genauer zu entscheiden oder vor allem schneller, und wann Menschen der KI mehr vertrauen, als sie sollten.
+357|Das Experiment
+358|Masterstudierende im Business-Bereich und Berufseinsteigende versetzen sich in die Rolle einer Führungskraft und lösen vier realistische Business Cases. Jeder Fall basiert auf einem synthetischen Unternehmensdatensatz mit genau einer objektiv richtigen Antwort.
+359|Produktportfolio
+360|Entscheiden, welche Produkte Vorrang haben
+361|Marketingbudget
+362|Ein begrenztes Budget verteilen
+363|Kundenbindung
+364|Gefährdete Kunden erkennen
+365|Lieferantenrisiko
+366|Die Zuverlässigkeit von Lieferanten beurteilen
+367|Jeder Fall wird in einem anderen Format gezeigt: als Power-BI-Dashboard, als KI-generierte Zusammenfassung oder beides zusammen. Die Studie misst Entscheidungsgenauigkeit, Tempo, Sicherheit, Selbstüberschätzung, Vertrauen und mentale Anstrengung und prüft, ob Datenkompetenz die übermässige Abhängigkeit von KI verringert.
+368|Die Grundlagen
+369|Cognitive Fit Theory: Entscheidungen werden besser, wenn das Format zur Aufgabe passt
+370|Automation Bias: die Neigung, einem System zu folgen, selbst wenn es falsch liegt
+371|Algorithm Aversion und Appreciation: wann Menschen KI-Ratschläge ablehnen oder ihnen zu sehr vertrauen
+372|Das Ergebnis
+373|Decision-Ready BI Framework
+374|das Organisationen zeigt, wann Dashboards, KI-Zusammenfassungen oder beides sinnvoll sind, welche Schutzmechanismen helfen, KI-Fehler zu erkennen, und welche Datenkompetenz Teams brauchen, um KI-Funktionen sicher zu nutzen.
+375|Status:
+376|Datenerhebung läuft bis am 2. Dezember 2026, Abgabe im Dezember 2026. Betreut am American Institute of Applied Sciences in Switzerland.
+378|Sree Kamya Sunnam | Business Intelligence & Data Analytics
+379|Sree Kamya Sunnam: Business-Intelligence- und Datenfachfrau in der Schweiz, die aus unübersichtlichen Daten Entscheidungen macht – in BI, Supply Chain und People Analytics.
+380|Aus unübersichtlichen Daten werden Entscheidungen – in BI, Supply Chain und People Analytics. Aktuell erforsche ich, ob KI Führungskräfte klüger macht oder nur schneller.
+381|Faster, Not Wiser? | Master-Abschlussarbeit | Sree Kamya Sunnam
+382|Master-Abschlussarbeit: Führen KI-generierte Erkenntnisse in BI-Tools zu besseren Managemententscheidungen oder nur zu schnelleren? Ein präregistriertes Experiment von Sree Kamya Sunnam.
+383|Ein präregistriertes Experiment zur Frage, ob KI-generierte Erkenntnisse Führungskräfte klüger machen oder nur schneller. Master-Abschlussarbeit von Sree Kamya Sunnam.
+384|Französisch · Deutsch
+385|Faster, Not Wiser? KI-Erkenntnisse vs. BI-Dashboards in Entscheidungen
